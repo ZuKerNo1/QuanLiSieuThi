@@ -1,0 +1,73 @@
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.SuggestedBindingRedirects.cache
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\UTE\221\LapTrinhTrucQuan\THLapTrinhTrucQuan\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ChiTietDonHang.resources
+D:\New folder\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+D:\New folder\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+D:\New folder\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+D:\New folder\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.SuggestedBindingRedirects.cache
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+D:\New folder\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.SuggestedBindingRedirects.cache
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+D:\UTE\BonMergeCodeNgu\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.SuggestedBindingRedirects.cache
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+D:\UTE\221\LapTrinhTrucQuan\LyThuyet\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
