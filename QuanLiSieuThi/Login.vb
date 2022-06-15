@@ -2,7 +2,7 @@
 Public Class Login
 
     Dim sqlStr As String
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-9TCJRCKI\KVU;Persist Security Info=True;Password=0934804796a;User ID=sa;Initial Catalog=QuanLySieuThi")
     Private Sub btnDangNhap_Click(sender As Object, e As EventArgs) Handles btnDangNhap.Click
         If tenTK.Text = "" Or matKhau.Text = "" Then
             MessageBox.Show("Vui lòng điền thông tin đầy đủ")

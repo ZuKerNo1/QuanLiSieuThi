@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 
 Public Class KhachHang
     Dim lenh As String
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-9TCJRCKI\KVU;Persist Security Info=True;Password=0934804796a;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
         maKHText.Enabled = False

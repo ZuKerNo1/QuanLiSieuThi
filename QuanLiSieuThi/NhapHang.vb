@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class NhapHang
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-9TCJRCKI\KVU;Persist Security Info=True;Password=0934804796a;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub NhapHang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

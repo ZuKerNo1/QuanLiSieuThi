@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class HoaDon
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-9TCJRCKI\KVU;Persist Security Info=True;Password=0934804796a;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
 
@@ -18,7 +18,7 @@ Public Class HoaDon
     Private Sub Xuat_HoaDon()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "SELECT dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan) as N'Thành tiền'
+        lenh = "SELECT dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, format(sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan),'##,#\ VNĐ','es-ES') as N'Thành tiền'
 FROM     dbo.HoaDon INNER JOIN
 				dbo.ChiTietHoaDon ON dbo.HoaDon.maHD = dbo.ChiTietHoaDon.maHD INNER JOIN
 				dbo.SanPham ON dbo.SanPham.maSP = dbo.ChiTietHoaDon.maSP INNER JOIN

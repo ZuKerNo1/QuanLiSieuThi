@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class NhanVien
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-9TCJRCKI\KVU;Persist Security Info=True;Password=0934804796a;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
 
@@ -21,7 +21,8 @@ Public Class NhanVien
     Private Sub Xuat_dsNV()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "select * from NhanVien"
+        lenh = "SELECT maNV, tenNV, SDT, email, chucVu, format((luong),'##,#\ VNĐ','es-ES') as N'Lương'
+From NhanVien "
         'Khai báo đối tượng Command dùng để thực hiện câu lệnh truy vấn
         Dim cmd As New SqlCommand(lenh, con)
         'Trước khi đọc cần mở kết nối ra
@@ -44,7 +45,7 @@ Public Class NhanVien
         sdtText.Text = dsNV.Current("SDT")
         mailText.Text = dsNV.Current("email")
         chucVuText.Text = dsNV.Current("chucVu")
-        luongText.Text = dsNV.Current("luong")
+        luongText.Text = dsNV.Current("Lương")
 
 
     End Sub
