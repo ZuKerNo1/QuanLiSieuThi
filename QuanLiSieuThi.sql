@@ -198,15 +198,15 @@ values
 go
 insert into ChiTietHoaDon
 values	
-	(1,'2',1000),
-	(1,'3',100),
-	(1,'1',100),
-	(2,'5',1000),
-	(2,'7',100),
-	(2,'8',100),
-	(3,'9',1000),
-	(3,'4',100),
-	(3,'5',100)
+	(1,'SP0002',1000),
+	(1,'SP0003',100),
+	(1,'SP0001',100),
+	(2,'SP0005',1000),
+	(2,'SP0007',100),
+	(2,'SP0008',100),
+	(3,'SP0009',1000),
+	(3,'SP0004',100),
+	(3,'SP0005',100)
 
 SELECT dbo.SanPham.tenSP, dbo.ChiTietHoaDon.soLuongDat, dbo.SanPham.donGiaBan, dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan AS TongTien
 FROM     dbo.ChiTietHoaDon INNER JOIN
@@ -255,7 +255,33 @@ SELECT *
 From SanPham 
 WHERE contains(tenSP,'sua')
 
-SELECT * From SanPham WHERE CONCAT(maSP, tenSP) like '%sua%'
+SELECT * From ChiTietHoaDon WHERE CONCAT(maSP, tenSP) like '%sua%'
 
 SELECT SERVERPROPERTY('IsFullTextInstalled')
 
+SELECT dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan) as N'Thành tiền'
+FROM     dbo.HoaDon INNER JOIN
+				dbo.ChiTietHoaDon ON dbo.HoaDon.maHD = dbo.ChiTietHoaDon.maHD INNER JOIN
+				dbo.SanPham ON dbo.SanPham.maSP = dbo.ChiTietHoaDon.maSP INNER JOIN
+                  dbo.KhachHang ON dbo.HoaDon.maKH = dbo.KhachHang.maKH INNER JOIN
+                  dbo.NhanVien ON dbo.HoaDon.maNV = dbo.NhanVien.maNV
+GROUP BY dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV
+
+
+SELECT maNV, tenNV, SDT, email, chucVu, format((luong),'##,#\ VNĐ','es-ES') as N'Lương'
+From NhanVien 
+
+create proc sp_autoID 
+	@idnextchar varchar(10) output
+as 
+begin
+	declare @idnext int 
+	select @idnext = max(right(maSP,4)) + 1
+	from SanPham
+	set @idnextchar = concat('SP',format(@idnext,'D4'))
+	print @idnextchar
+end
+go
+--Goi thủ tục
+declare @idnextchar varchar(10)
+exec sp_autoID @idnextchar 
