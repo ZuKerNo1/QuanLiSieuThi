@@ -88,3 +88,7 @@ D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompile
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
