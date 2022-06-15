@@ -120,6 +120,12 @@
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MuaHang.Designer.vb">
+      <DependentUpon>MuaHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MuaHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NhanVienDS.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuaHang.resx">
+      <DependentUpon>MuaHang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.vb</DependentUpon>

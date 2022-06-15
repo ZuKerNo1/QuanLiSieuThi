@@ -235,7 +235,7 @@ FROM     dbo.ChiTietHoaDon INNER JOIN
                   dbo.KhachHang ON dbo.HoaDon.maKH = dbo.KhachHang.maKH INNER JOIN
                   dbo.NhanVien ON dbo.HoaDon.maNV = dbo.NhanVien.maNV INNER JOIN
                   dbo.SanPham ON dbo.ChiTietHoaDon.maSP = dbo.SanPham.maSP
-GROUP BY dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, 
+GROUP BY dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV
 
 /*
 SELECT dbo.SanPham.tenSP, dbo.ChiTietHoaDon.soLuongDat, dbo.SanPham.donGiaBan, dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan AS TongTien

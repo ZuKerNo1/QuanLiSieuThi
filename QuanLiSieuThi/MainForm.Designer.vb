@@ -39,6 +39,7 @@ Partial Class MainForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.menuPanel.SuspendLayout()
@@ -103,6 +104,7 @@ Partial Class MainForm
         'menuPanel
         '
         Me.menuPanel.BackColor = System.Drawing.Color.White
+        Me.menuPanel.Controls.Add(Me.Button6)
         Me.menuPanel.Controls.Add(Me.Button5)
         Me.menuPanel.Controls.Add(Me.Button4)
         Me.menuPanel.Controls.Add(Me.Button3)
@@ -110,7 +112,7 @@ Partial Class MainForm
         Me.menuPanel.Controls.Add(Me.Button1)
         Me.menuPanel.Location = New System.Drawing.Point(3, 93)
         Me.menuPanel.Name = "menuPanel"
-        Me.menuPanel.Size = New System.Drawing.Size(207, 700)
+        Me.menuPanel.Size = New System.Drawing.Size(207, 920)
         Me.menuPanel.TabIndex = 3
         '
         'Button5
@@ -147,7 +149,7 @@ Partial Class MainForm
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(1, 276)
+        Me.Button3.Location = New System.Drawing.Point(1, 687)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(205, 131)
         Me.Button3.TabIndex = 2
@@ -190,7 +192,7 @@ Partial Class MainForm
         Me.switchPanel.Controls.Add(Me.PictureBox1)
         Me.switchPanel.Location = New System.Drawing.Point(209, 93)
         Me.switchPanel.Name = "switchPanel"
-        Me.switchPanel.Size = New System.Drawing.Size(1052, 700)
+        Me.switchPanel.Size = New System.Drawing.Size(1049, 920)
         Me.switchPanel.TabIndex = 4
         '
         'Panel1
@@ -235,11 +237,25 @@ Partial Class MainForm
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(0, 276)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(205, 131)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "MUA HÀNG"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1261, 798)
+        Me.ClientSize = New System.Drawing.Size(1261, 920)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.menuPanel)
         Me.Controls.Add(Me.switchPanel)
@@ -276,4 +292,5 @@ Partial Class MainForm
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button6 As Button
 End Class

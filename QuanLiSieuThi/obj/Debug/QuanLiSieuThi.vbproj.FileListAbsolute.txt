@@ -93,3 +93,4 @@ D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.DangKy.resources
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MuaHang.resources
