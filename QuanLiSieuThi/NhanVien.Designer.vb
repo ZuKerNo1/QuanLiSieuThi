@@ -23,12 +23,6 @@ Partial Class NhanVien
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
-        Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Title = New System.Windows.Forms.Label()
         Me.XoaBtn = New System.Windows.Forms.Button()
@@ -36,7 +30,6 @@ Partial Class NhanVien
         Me.SuaBtn = New System.Windows.Forms.Button()
         Me.ThemBtn = New System.Windows.Forms.Button()
         Me.mailText = New System.Windows.Forms.TextBox()
-        Me.DsNhanVien1 = New QuanLiSieuThi.dsNhanVien()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.sdtText = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -48,59 +41,15 @@ Partial Class NhanVien
         Me.chucVuText = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.luongText = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaNVDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNVDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SDTDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChucVuDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LuongDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ViewNhanVien = New System.Windows.Forms.DataGridView()
         Me.TimBtn = New System.Windows.Forms.Button()
         Me.searchText = New System.Windows.Forms.TextBox()
         Me.InBtn = New System.Windows.Forms.Button()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.Panel2.SuspendLayout()
-        CType(Me.DsNhanVien1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ViewNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'OleDbSelectCommand1
-        '
-        Me.OleDbSelectCommand1.CommandText = "SELECT dbo.NhanVien.*" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM     dbo.NhanVien"
-        Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
-        '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=LAPTOP-9TCJRCKI\KVU;Integrated Security=SSPI;In" &
-    "itial Catalog=QuanLySieuThi"
-        '
-        'OleDbInsertCommand1
-        '
-        Me.OleDbInsertCommand1.CommandText = "INSERT INTO ""QuanLySieuThi"".""dbo"".""NhanVien"" (""tenNV"", ""SDT"", ""email"", ""chucVu"", " &
-    """luong"") VALUES (?, ?, ?, ?, ?)"
-        Me.OleDbInsertCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbInsertCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("tenNV", System.Data.OleDb.OleDbType.VarWChar, 0, "tenNV"), New System.Data.OleDb.OleDbParameter("SDT", System.Data.OleDb.OleDbType.VarWChar, 0, "SDT"), New System.Data.OleDb.OleDbParameter("email", System.Data.OleDb.OleDbType.VarWChar, 0, "email"), New System.Data.OleDb.OleDbParameter("chucVu", System.Data.OleDb.OleDbType.VarWChar, 0, "chucVu"), New System.Data.OleDb.OleDbParameter("luong", System.Data.OleDb.OleDbType.Currency, 0, "luong")})
-        '
-        'OleDbUpdateCommand1
-        '
-        Me.OleDbUpdateCommand1.CommandText = resources.GetString("OleDbUpdateCommand1.CommandText")
-        Me.OleDbUpdateCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbUpdateCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("tenNV", System.Data.OleDb.OleDbType.VarWChar, 0, "tenNV"), New System.Data.OleDb.OleDbParameter("SDT", System.Data.OleDb.OleDbType.VarWChar, 0, "SDT"), New System.Data.OleDb.OleDbParameter("email", System.Data.OleDb.OleDbType.VarWChar, 0, "email"), New System.Data.OleDb.OleDbParameter("chucVu", System.Data.OleDb.OleDbType.VarWChar, 0, "chucVu"), New System.Data.OleDb.OleDbParameter("luong", System.Data.OleDb.OleDbType.Currency, 0, "luong"), New System.Data.OleDb.OleDbParameter("Original_maNV", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maNV", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenNV", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenNV", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenNV", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenNV", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_SDT", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_SDT", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_email", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "email", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_email", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "email", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_chucVu", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "chucVu", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_chucVu", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "chucVu", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_luong", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "luong", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_luong", System.Data.OleDb.OleDbType.Currency, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "luong", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDeleteCommand1
-        '
-        Me.OleDbDeleteCommand1.CommandText = resources.GetString("OleDbDeleteCommand1.CommandText")
-        Me.OleDbDeleteCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbDeleteCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("Original_maNV", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maNV", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenNV", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenNV", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenNV", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenNV", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_SDT", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_SDT", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_email", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "email", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_email", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "email", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_chucVu", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "chucVu", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_chucVu", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "chucVu", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_luong", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "luong", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_luong", System.Data.OleDb.OleDbType.Currency, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "luong", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDataAdapter1
-        '
-        Me.OleDbDataAdapter1.DeleteCommand = Me.OleDbDeleteCommand1
-        Me.OleDbDataAdapter1.InsertCommand = Me.OleDbInsertCommand1
-        Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
-        Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "NhanVien", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("maNV", "maNV"), New System.Data.Common.DataColumnMapping("tenNV", "tenNV"), New System.Data.Common.DataColumnMapping("SDT", "SDT"), New System.Data.Common.DataColumnMapping("email", "email"), New System.Data.Common.DataColumnMapping("chucVu", "chucVu"), New System.Data.Common.DataColumnMapping("luong", "luong")})})
-        Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
         '
         'Panel2
         '
@@ -118,7 +67,7 @@ Partial Class NhanVien
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Title.Location = New System.Drawing.Point(354, 33)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(345, 32)
+        Me.Title.Size = New System.Drawing.Size(346, 32)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH NHÂN VIÊN"
         '
@@ -172,18 +121,12 @@ Partial Class NhanVien
         '
         'mailText
         '
-        Me.mailText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.email", True))
         Me.mailText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mailText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.mailText.Location = New System.Drawing.Point(362, 167)
         Me.mailText.Name = "mailText"
         Me.mailText.Size = New System.Drawing.Size(270, 27)
         Me.mailText.TabIndex = 24
-        '
-        'DsNhanVien1
-        '
-        Me.DsNhanVien1.DataSetName = "dsNhanVien"
-        Me.DsNhanVien1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label5
         '
@@ -198,7 +141,6 @@ Partial Class NhanVien
         '
         'sdtText
         '
-        Me.sdtText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.SDT", True))
         Me.sdtText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sdtText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.sdtText.Location = New System.Drawing.Point(130, 169)
@@ -219,7 +161,6 @@ Partial Class NhanVien
         '
         'nameText
         '
-        Me.nameText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.tenNV", True))
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.nameText.Location = New System.Drawing.Point(362, 120)
@@ -240,7 +181,6 @@ Partial Class NhanVien
         '
         'maNVText
         '
-        Me.maNVText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.maNV", True))
         Me.maNVText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maNVText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.maNVText.Location = New System.Drawing.Point(130, 121)
@@ -272,7 +212,6 @@ Partial Class NhanVien
         '
         'chucVuText
         '
-        Me.chucVuText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.chucVu", True))
         Me.chucVuText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chucVuText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.chucVuText.Location = New System.Drawing.Point(783, 119)
@@ -293,7 +232,6 @@ Partial Class NhanVien
         '
         'luongText
         '
-        Me.luongText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsNhanVien1, "NhanVien.luong", True))
         Me.luongText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.luongText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.luongText.Location = New System.Drawing.Point(783, 167)
@@ -301,69 +239,18 @@ Partial Class NhanVien
         Me.luongText.Size = New System.Drawing.Size(201, 27)
         Me.luongText.TabIndex = 36
         '
-        'DataGridView1
+        'ViewNhanVien
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaNVDataGridViewTextBoxColumn, Me.TenNVDataGridViewTextBoxColumn, Me.SDTDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.ChucVuDataGridViewTextBoxColumn, Me.LuongDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataMember = "NhanVien"
-        Me.DataGridView1.DataSource = Me.DsNhanVien1
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 377)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1028, 311)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'MaNVDataGridViewTextBoxColumn
-        '
-        Me.MaNVDataGridViewTextBoxColumn.DataPropertyName = "maNV"
-        Me.MaNVDataGridViewTextBoxColumn.HeaderText = "maNV"
-        Me.MaNVDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.MaNVDataGridViewTextBoxColumn.Name = "MaNVDataGridViewTextBoxColumn"
-        Me.MaNVDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenNVDataGridViewTextBoxColumn
-        '
-        Me.TenNVDataGridViewTextBoxColumn.DataPropertyName = "tenNV"
-        Me.TenNVDataGridViewTextBoxColumn.HeaderText = "tenNV"
-        Me.TenNVDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenNVDataGridViewTextBoxColumn.Name = "TenNVDataGridViewTextBoxColumn"
-        Me.TenNVDataGridViewTextBoxColumn.Width = 125
-        '
-        'SDTDataGridViewTextBoxColumn
-        '
-        Me.SDTDataGridViewTextBoxColumn.DataPropertyName = "SDT"
-        Me.SDTDataGridViewTextBoxColumn.HeaderText = "SDT"
-        Me.SDTDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SDTDataGridViewTextBoxColumn.Name = "SDTDataGridViewTextBoxColumn"
-        Me.SDTDataGridViewTextBoxColumn.Width = 125
-        '
-        'EmailDataGridViewTextBoxColumn
-        '
-        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
-        Me.EmailDataGridViewTextBoxColumn.HeaderText = "email"
-        Me.EmailDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
-        Me.EmailDataGridViewTextBoxColumn.Width = 125
-        '
-        'ChucVuDataGridViewTextBoxColumn
-        '
-        Me.ChucVuDataGridViewTextBoxColumn.DataPropertyName = "chucVu"
-        Me.ChucVuDataGridViewTextBoxColumn.HeaderText = "chucVu"
-        Me.ChucVuDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ChucVuDataGridViewTextBoxColumn.Name = "ChucVuDataGridViewTextBoxColumn"
-        Me.ChucVuDataGridViewTextBoxColumn.Width = 125
-        '
-        'LuongDataGridViewTextBoxColumn
-        '
-        Me.LuongDataGridViewTextBoxColumn.DataPropertyName = "luong"
-        Me.LuongDataGridViewTextBoxColumn.HeaderText = "luong"
-        Me.LuongDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.LuongDataGridViewTextBoxColumn.Name = "LuongDataGridViewTextBoxColumn"
-        Me.LuongDataGridViewTextBoxColumn.Width = 125
+        Me.ViewNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.ViewNhanVien.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.ViewNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ViewNhanVien.Location = New System.Drawing.Point(12, 377)
+        Me.ViewNhanVien.Name = "ViewNhanVien"
+        Me.ViewNhanVien.RowHeadersWidth = 51
+        Me.ViewNhanVien.RowTemplate.Height = 24
+        Me.ViewNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.ViewNhanVien.Size = New System.Drawing.Size(1028, 311)
+        Me.ViewNhanVien.TabIndex = 0
         '
         'TimBtn
         '
@@ -440,33 +327,18 @@ Partial Class NhanVien
         Me.Controls.Add(Me.maNVText)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.ViewNhanVien)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "NhanVien"
         Me.Text = "Form2"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DsNhanVien1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ViewNhanVien, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
-    Friend WithEvents OleDbInsertCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbUpdateCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDeleteCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
-    Friend WithEvents DsNhanVien1 As dsNhanVien
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaNVDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenNVDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SDTDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ChucVuDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents LuongDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ViewNhanVien As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Title As Label
     Friend WithEvents XoaBtn As Button

@@ -22,22 +22,22 @@ QuanLiSieuThi
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="T:QuanLiSieuThi.DsHoaDon">
+<member name="T:QuanLiSieuThi.DSHoaDon">
 <summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:QuanLiSieuThi.DsHoaDon.HoaDonDataTable">
+<member name="T:QuanLiSieuThi.DSHoaDon.HoaDonDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:QuanLiSieuThi.DsHoaDon.HoaDonRow">
+<member name="T:QuanLiSieuThi.DSHoaDon.HoaDonRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:QuanLiSieuThi.DsHoaDon.HoaDonRowChangeEvent">
+<member name="T:QuanLiSieuThi.DSHoaDon.HoaDonRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

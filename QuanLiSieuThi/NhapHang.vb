@@ -2,11 +2,10 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class NhapHang
-    Dim con As SqlConnection = New SqlConnection("Data Source=.;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub NhapHang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DsNhapHang1.Clear()
-        OleDbDataAdapter1.Fill(DsNhapHang1)
+
     End Sub
     Public Sub FilterData(valueToSearch As String)
         Dim searchQuery As String = "SELECT dbo.PhieuNhap.maPN, dbo.PhieuNhap.ngayNhapHang, dbo.SanPham.tenSP, dbo.ChiTietPhieuNhap.soLuongNhap,dbo.ChiTietPhieuNhap.donGiaNhap

@@ -57,6 +57,8 @@
         If (Not (ActiveForm) Is Nothing) Then
             ActiveForm.Close()
         End If
+
+        Me.Hide()
     End Sub
 
 
@@ -79,6 +81,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         OpenChildForm(New HoaDon(), sender)
     End Sub
+
 
 
 End Class

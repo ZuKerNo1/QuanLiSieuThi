@@ -23,18 +23,7 @@ Partial Class HoaDon
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HoaDon))
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.OleDbCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbCommand3 = New System.Data.OleDb.OleDbCommand()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaHDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayTaoHDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenKHDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNVDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TongTienDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DsHoaDon1 = New QuanLiSieuThi.DsHoaDon()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Title = New System.Windows.Forms.Label()
         Me.soLuongText = New System.Windows.Forms.TextBox()
@@ -52,36 +41,16 @@ Partial Class HoaDon
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.InBtn = New System.Windows.Forms.Button()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DsHoaDon1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'OleDbSelectCommand1
-        '
-        Me.OleDbSelectCommand1.CommandText = resources.GetString("OleDbSelectCommand1.CommandText")
-        Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
-        '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=LAPTOP-9TCJRCKI\KVU;Integrated Security=SSPI;In" &
-    "itial Catalog=QuanLySieuThi"
-        '
-        'OleDbDataAdapter1
-        '
-        Me.OleDbDataAdapter1.DeleteCommand = Me.OleDbCommand1
-        Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
-        Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "HoaDon", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("maHD", "maHD"), New System.Data.Common.DataColumnMapping("ngayTaoHD", "ngayTaoHD"), New System.Data.Common.DataColumnMapping("tenKH", "tenKH"), New System.Data.Common.DataColumnMapping("tenNV", "tenNV"), New System.Data.Common.DataColumnMapping("TongTien", "TongTien")})})
-        Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbCommand3
-        '
         'DataGridView1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaHDDataGridViewTextBoxColumn, Me.NgayTaoHDDataGridViewTextBoxColumn, Me.TenKHDataGridViewTextBoxColumn, Me.TenNVDataGridViewTextBoxColumn, Me.TongTienDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataMember = "HoaDon"
-        Me.DataGridView1.DataSource = Me.DsHoaDon1
         Me.DataGridView1.Location = New System.Drawing.Point(64, 392)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
@@ -89,53 +58,6 @@ Partial Class HoaDon
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(907, 296)
         Me.DataGridView1.TabIndex = 0
-        '
-        'MaHDDataGridViewTextBoxColumn
-        '
-        Me.MaHDDataGridViewTextBoxColumn.DataPropertyName = "maHD"
-        Me.MaHDDataGridViewTextBoxColumn.HeaderText = "maHD"
-        Me.MaHDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.MaHDDataGridViewTextBoxColumn.Name = "MaHDDataGridViewTextBoxColumn"
-        Me.MaHDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaHDDataGridViewTextBoxColumn.Width = 125
-        '
-        'NgayTaoHDDataGridViewTextBoxColumn
-        '
-        Me.NgayTaoHDDataGridViewTextBoxColumn.DataPropertyName = "ngayTaoHD"
-        Me.NgayTaoHDDataGridViewTextBoxColumn.HeaderText = "ngayTaoHD"
-        Me.NgayTaoHDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NgayTaoHDDataGridViewTextBoxColumn.Name = "NgayTaoHDDataGridViewTextBoxColumn"
-        Me.NgayTaoHDDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenKHDataGridViewTextBoxColumn
-        '
-        Me.TenKHDataGridViewTextBoxColumn.DataPropertyName = "tenKH"
-        Me.TenKHDataGridViewTextBoxColumn.HeaderText = "tenKH"
-        Me.TenKHDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenKHDataGridViewTextBoxColumn.Name = "TenKHDataGridViewTextBoxColumn"
-        Me.TenKHDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenNVDataGridViewTextBoxColumn
-        '
-        Me.TenNVDataGridViewTextBoxColumn.DataPropertyName = "tenNV"
-        Me.TenNVDataGridViewTextBoxColumn.HeaderText = "tenNV"
-        Me.TenNVDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenNVDataGridViewTextBoxColumn.Name = "TenNVDataGridViewTextBoxColumn"
-        Me.TenNVDataGridViewTextBoxColumn.Width = 125
-        '
-        'TongTienDataGridViewTextBoxColumn
-        '
-        Me.TongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien"
-        Me.TongTienDataGridViewTextBoxColumn.HeaderText = "TongTien"
-        Me.TongTienDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TongTienDataGridViewTextBoxColumn.Name = "TongTienDataGridViewTextBoxColumn"
-        Me.TongTienDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TongTienDataGridViewTextBoxColumn.Width = 125
-        '
-        'DsHoaDon1
-        '
-        Me.DsHoaDon1.DataSetName = "DsHoaDon"
-        Me.DsHoaDon1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Panel2
         '
@@ -153,13 +75,12 @@ Partial Class HoaDon
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Title.Location = New System.Drawing.Point(366, 33)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(319, 32)
+        Me.Title.Size = New System.Drawing.Size(320, 32)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH HÓA ĐƠN"
         '
         'soLuongText
         '
-        Me.soLuongText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsHoaDon1, "HoaDon.tenNV", True))
         Me.soLuongText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.soLuongText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.soLuongText.Location = New System.Drawing.Point(593, 175)
@@ -180,7 +101,6 @@ Partial Class HoaDon
         '
         'giaText
         '
-        Me.giaText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsHoaDon1, "HoaDon.tenKH", True))
         Me.giaText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.giaText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.giaText.Location = New System.Drawing.Point(593, 117)
@@ -201,7 +121,6 @@ Partial Class HoaDon
         '
         'nameText
         '
-        Me.nameText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsHoaDon1, "HoaDon.ngayTaoHD", True))
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.nameText.Location = New System.Drawing.Point(291, 175)
@@ -222,7 +141,6 @@ Partial Class HoaDon
         '
         'maHDText
         '
-        Me.maHDText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsHoaDon1, "HoaDon.maHD", True))
         Me.maHDText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maHDText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.maHDText.Location = New System.Drawing.Point(291, 117)
@@ -243,7 +161,6 @@ Partial Class HoaDon
         '
         'tienText
         '
-        Me.tienText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsHoaDon1, "HoaDon.TongTien", True))
         Me.tienText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tienText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.tienText.Location = New System.Drawing.Point(291, 227)
@@ -311,6 +228,10 @@ Partial Class HoaDon
         'PrintDocument1
         '
         '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
         'HoaDon
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -336,17 +257,12 @@ Partial Class HoaDon
         Me.Name = "HoaDon"
         Me.Text = "Hóa Đơn"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DsHoaDon1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
-    Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Title As Label
@@ -358,14 +274,6 @@ Partial Class HoaDon
     Friend WithEvents Label2 As Label
     Friend WithEvents maHDText As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents OleDbCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbCommand3 As OleDb.OleDbCommand
-    Friend WithEvents MaHDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NgayTaoHDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenKHDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenNVDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TongTienDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DsHoaDon1 As DsHoaDon
     Friend WithEvents tienText As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TimBtn As Button
@@ -373,4 +281,5 @@ Partial Class HoaDon
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents InBtn As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintDialog1 As PrintDialog
 End Class

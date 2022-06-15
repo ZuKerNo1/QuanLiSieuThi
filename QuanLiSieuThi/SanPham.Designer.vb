@@ -23,18 +23,7 @@ Partial Class SanPham
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SanPham))
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
-        Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.DsSanPham1 = New QuanLiSieuThi.DsSanPham()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaSPDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenSPDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DonGiaBanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoLuongConDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ViewSanPham = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Title = New System.Windows.Forms.Label()
         Me.soLuongText = New System.Windows.Forms.TextBox()
@@ -54,100 +43,22 @@ Partial Class SanPham
         Me.InBtn = New System.Windows.Forms.Button()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        CType(Me.DsSanPham1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ViewSanPham, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'OleDbSelectCommand1
+        'ViewSanPham
         '
-        Me.OleDbSelectCommand1.CommandText = "SELECT dbo.SanPham.*" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM     dbo.SanPham"
-        Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
-        '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=LAPTOP-9TCJRCKI\KVU;Integrated Security=SSPI;In" &
-    "itial Catalog=QuanLySieuThi"
-        '
-        'OleDbInsertCommand1
-        '
-        Me.OleDbInsertCommand1.CommandText = "INSERT INTO ""QuanLySieuThi"".""dbo"".""SanPham"" (""maSP"", ""tenSP"", ""donGiaBan"", ""soLuo" &
-    "ngCon"") VALUES (?, ?, ?, ?)"
-        Me.OleDbInsertCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbInsertCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("maSP", System.Data.OleDb.OleDbType.VarChar, 0, "maSP"), New System.Data.OleDb.OleDbParameter("tenSP", System.Data.OleDb.OleDbType.VarWChar, 0, "tenSP"), New System.Data.OleDb.OleDbParameter("donGiaBan", System.Data.OleDb.OleDbType.Currency, 0, "donGiaBan"), New System.Data.OleDb.OleDbParameter("soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, "soLuongCon")})
-        '
-        'OleDbUpdateCommand1
-        '
-        Me.OleDbUpdateCommand1.CommandText = resources.GetString("OleDbUpdateCommand1.CommandText")
-        Me.OleDbUpdateCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbUpdateCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("maSP", System.Data.OleDb.OleDbType.VarChar, 0, "maSP"), New System.Data.OleDb.OleDbParameter("tenSP", System.Data.OleDb.OleDbType.VarWChar, 0, "tenSP"), New System.Data.OleDb.OleDbParameter("donGiaBan", System.Data.OleDb.OleDbType.Currency, 0, "donGiaBan"), New System.Data.OleDb.OleDbParameter("soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, "soLuongCon"), New System.Data.OleDb.OleDbParameter("Original_maSP", System.Data.OleDb.OleDbType.VarChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maSP", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenSP", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenSP", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenSP", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenSP", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_donGiaBan", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "donGiaBan", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_donGiaBan", System.Data.OleDb.OleDbType.Currency, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "donGiaBan", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "soLuongCon", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "soLuongCon", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDeleteCommand1
-        '
-        Me.OleDbDeleteCommand1.CommandText = resources.GetString("OleDbDeleteCommand1.CommandText")
-        Me.OleDbDeleteCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbDeleteCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("Original_maSP", System.Data.OleDb.OleDbType.VarChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maSP", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenSP", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenSP", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenSP", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenSP", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_donGiaBan", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "donGiaBan", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_donGiaBan", System.Data.OleDb.OleDbType.Currency, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "donGiaBan", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "soLuongCon", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_soLuongCon", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "soLuongCon", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDataAdapter1
-        '
-        Me.OleDbDataAdapter1.DeleteCommand = Me.OleDbDeleteCommand1
-        Me.OleDbDataAdapter1.InsertCommand = Me.OleDbInsertCommand1
-        Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
-        Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "SanPham", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("maSP", "maSP"), New System.Data.Common.DataColumnMapping("tenSP", "tenSP"), New System.Data.Common.DataColumnMapping("donGiaBan", "donGiaBan"), New System.Data.Common.DataColumnMapping("soLuongCon", "soLuongCon")})})
-        Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
-        '
-        'DsSanPham1
-        '
-        Me.DsSanPham1.DataSetName = "DsSanPham"
-        Me.DsSanPham1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSPDataGridViewTextBoxColumn, Me.TenSPDataGridViewTextBoxColumn, Me.DonGiaBanDataGridViewTextBoxColumn, Me.SoLuongConDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataMember = "SanPham"
-        Me.DataGridView1.DataSource = Me.DsSanPham1
-        Me.DataGridView1.Location = New System.Drawing.Point(120, 408)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(763, 280)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'MaSPDataGridViewTextBoxColumn
-        '
-        Me.MaSPDataGridViewTextBoxColumn.DataPropertyName = "maSP"
-        Me.MaSPDataGridViewTextBoxColumn.HeaderText = "maSP"
-        Me.MaSPDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.MaSPDataGridViewTextBoxColumn.Name = "MaSPDataGridViewTextBoxColumn"
-        Me.MaSPDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenSPDataGridViewTextBoxColumn
-        '
-        Me.TenSPDataGridViewTextBoxColumn.DataPropertyName = "tenSP"
-        Me.TenSPDataGridViewTextBoxColumn.HeaderText = "tenSP"
-        Me.TenSPDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenSPDataGridViewTextBoxColumn.Name = "TenSPDataGridViewTextBoxColumn"
-        Me.TenSPDataGridViewTextBoxColumn.Width = 125
-        '
-        'DonGiaBanDataGridViewTextBoxColumn
-        '
-        Me.DonGiaBanDataGridViewTextBoxColumn.DataPropertyName = "donGiaBan"
-        Me.DonGiaBanDataGridViewTextBoxColumn.HeaderText = "donGiaBan"
-        Me.DonGiaBanDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DonGiaBanDataGridViewTextBoxColumn.Name = "DonGiaBanDataGridViewTextBoxColumn"
-        Me.DonGiaBanDataGridViewTextBoxColumn.Width = 125
-        '
-        'SoLuongConDataGridViewTextBoxColumn
-        '
-        Me.SoLuongConDataGridViewTextBoxColumn.DataPropertyName = "soLuongCon"
-        Me.SoLuongConDataGridViewTextBoxColumn.HeaderText = "soLuongCon"
-        Me.SoLuongConDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SoLuongConDataGridViewTextBoxColumn.Name = "SoLuongConDataGridViewTextBoxColumn"
-        Me.SoLuongConDataGridViewTextBoxColumn.Width = 125
+        Me.ViewSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.ViewSanPham.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.ViewSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ViewSanPham.Location = New System.Drawing.Point(120, 408)
+        Me.ViewSanPham.Name = "ViewSanPham"
+        Me.ViewSanPham.RowHeadersWidth = 51
+        Me.ViewSanPham.RowTemplate.Height = 24
+        Me.ViewSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.ViewSanPham.Size = New System.Drawing.Size(763, 280)
+        Me.ViewSanPham.TabIndex = 0
         '
         'Panel2
         '
@@ -165,13 +76,12 @@ Partial Class SanPham
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Title.Location = New System.Drawing.Point(357, 35)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(337, 32)
+        Me.Title.Size = New System.Drawing.Size(338, 32)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH SẢN PHẨM"
         '
         'soLuongText
         '
-        Me.soLuongText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsSanPham1, "SanPham.soLuongCon", True))
         Me.soLuongText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.soLuongText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.soLuongText.Location = New System.Drawing.Point(565, 173)
@@ -192,7 +102,6 @@ Partial Class SanPham
         '
         'giaText
         '
-        Me.giaText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsSanPham1, "SanPham.donGiaBan", True))
         Me.giaText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.giaText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.giaText.Location = New System.Drawing.Point(298, 175)
@@ -213,7 +122,6 @@ Partial Class SanPham
         '
         'nameText
         '
-        Me.nameText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsSanPham1, "SanPham.tenSP", True))
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.nameText.Location = New System.Drawing.Point(565, 116)
@@ -234,7 +142,6 @@ Partial Class SanPham
         '
         'maSPText
         '
-        Me.maSPText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsSanPham1, "SanPham.maSP", True))
         Me.maSPText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maSPText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.maSPText.Location = New System.Drawing.Point(298, 116)
@@ -372,31 +279,18 @@ Partial Class SanPham
         Me.Controls.Add(Me.maSPText)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.ViewSanPham)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "SanPham"
         Me.Text = "Form1"
-        CType(Me.DsSanPham1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ViewSanPham, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
-    Friend WithEvents OleDbInsertCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbUpdateCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDeleteCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
-    Friend WithEvents DsSanPham1 As DsSanPham
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaSPDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenSPDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DonGiaBanDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SoLuongConDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ViewSanPham As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Title As Label
     Friend WithEvents soLuongText As TextBox

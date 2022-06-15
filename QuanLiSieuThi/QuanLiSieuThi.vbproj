@@ -74,10 +74,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DsHoaDon.Designer.vb">
+    <Compile Include="DSHoaDon.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DsHoaDon.xsd</DependentUpon>
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
     </Compile>
     <Compile Include="DsKhachHang.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -186,16 +186,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DsHoaDon.xsc">
-      <DependentUpon>DsHoaDon.xsd</DependentUpon>
+    <None Include="DSHoaDon.xsc">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
     </None>
-    <None Include="DsHoaDon.xsd">
+    <None Include="DSHoaDon.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DsHoaDon.Designer.vb</LastGenOutput>
+      <LastGenOutput>DSHoaDon.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DsHoaDon.xss">
-      <DependentUpon>DsHoaDon.xsd</DependentUpon>
+    <None Include="DSHoaDon.xss">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
     </None>
     <None Include="DsKhachHang.xsc">
       <DependentUpon>DsKhachHang.xsd</DependentUpon>

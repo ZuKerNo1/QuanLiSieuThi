@@ -2,17 +2,47 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class SanPham
-    Dim con As SqlConnection = New SqlConnection("Data Source=.;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
-        DsSanPham1.Clear()
-        OleDbDataAdapter1.Fill(DsSanPham1)
+
         maSPText.Enabled = False
     End Sub
     Private Sub SanPham_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Load_Data()
+        Xuat_SanPham()
     End Sub
 
+    'Hiển thị db NhânViên
+
+    Private WithEvents dsSP As BindingManagerBase
+    Private Sub Xuat_SanPham()
+        Dim lenh As String
+        'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
+        lenh = "select * from SanPham"
+        'Khai báo đối tượng Command dùng để thực hiện câu lệnh truy vấn
+        Dim cmd As New SqlCommand(lenh, con)
+        'Trước khi đọc cần mở kết nối ra
+        con.Open()
+        'Sử dụng phương thức ExecuteReader để đọc và trả về cho đối tượng DataReader
+        Dim bang_doc As SqlDataReader = cmd.ExecuteReader
+        'Khai báo DataTable để nhận kết quả là các dòng đọc được
+        Dim dttable As New DataTable("SanPham")
+        'Sử dụng phương thức Load và gởi vào DataReader để bắt đầu đọc các dòng ra
+        dttable.Load(bang_doc, LoadOption.OverwriteChanges)
+        'Sau khi đọc cần đóng kết nối lại
+        con.Close()
+        ViewSanPham.DataSource = dttable
+        'khoi tao lien ket voi datatable.
+
+        dsSP = Me.BindingContext(dttable)
+
+        maSPText.Text = dsSP.Current("maSP")
+        nameText.Text = dsSP.Current("tenSP")
+        giaText.Text = dsSP.Current("donGiaBan")
+        soLuongText.Text = dsSP.Current("soLuongCon")
+
+    End Sub
     Private Sub ThemBtn_Click(sender As Object, e As EventArgs) Handles ThemBtn.Click
         maSPText.Text = ""
         maSPText.Enabled = False
@@ -21,71 +51,14 @@ Public Class SanPham
         soLuongText.Text = ""
     End Sub
 
-    Private Sub SuaBtn_Click(sender As Object, e As EventArgs) Handles SuaBtn.Click
-        If MsgBox("Bạn có muốn sửa không?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Sửa") = MsgBoxResult.Yes Then
 
-            Try
-                    OleDbConnection1.Open()
-                Dim sql As String = "Update SanPham set tenSP= N'" &
-                    nameText.Text & "', donGiaBan= N'" & giaText.Text & "', soLuongCon= '" &
-                    soLuongText.Text & "' where maSP = '" & maSPText.Text & "'"
-                OleDbInsertCommand1.CommandText = sql
-                    OleDbInsertCommand1.ExecuteNonQuery()
-                    OleDbConnection1.Close()
-                    Load_Data()
-                    MsgBox("Đã sửa!")
-                Catch ex As Exception
-                    MsgBox(ex.ToString)
-                End Try
-
-        End If
-    End Sub
-
-    Private Sub XoaBtn_Click(sender As Object, e As EventArgs) Handles XoaBtn.Click
-        If MsgBox("Bạn có muốn xóa không?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
-            Try
-                OleDbConnection1.Open()
-                Dim sql As String = "delete from SanPham where maSP = '" & maSPText.Text & "'"
-                OleDbInsertCommand1.CommandText = sql
-                OleDbInsertCommand1.ExecuteNonQuery()
-                OleDbConnection1.Close()
-                Load_Data()
-                MsgBox("Đã xóa!")
-            Catch ex As Exception
-                MsgBox(ex.ToString)
-            End Try
-        End If
-    End Sub
-
-    Private Sub LuuBtn_Click(sender As Object, e As EventArgs) Handles LuuBtn.Click
-        If MsgBox("Bạn có muốn lưu không?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Lưu") = MsgBoxResult.Yes Then
-            If nameText.Text = "" Or
-           giaText.Text = "" Or soLuongText.Text = "" Then
-                MsgBox("Chưa nhập giá trị!!!")
-            Else
-                Try
-                    OleDbConnection1.Open()
-                    Dim sql As String = "insert into SanPham values(N'" & nameText.Text & "', '" &
-                    giaText.Text & "', '" &
-                    soLuongText.Text & "')"
-                    OleDbInsertCommand1.CommandText = sql
-                    OleDbInsertCommand1.ExecuteNonQuery()
-                    OleDbConnection1.Close()
-                    Load_Data()
-                    MsgBox("Đã thêm!")
-                Catch ex As Exception
-                    MsgBox(ex.ToString)
-                End Try
-            End If
-        End If
-    End Sub
     Public Sub FilterData(valueToSearch As String)
         Dim searchQuery As String = "SELECT * From SanPham WHERE CONCAT(maSP, tenSP) like '%" & valueToSearch & "%'"
         Dim cmd As New SqlCommand(searchQuery, con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
         adapter.Fill(table)
-        DataGridView1.DataSource = table
+        ViewSanPham.DataSource = table
     End Sub
 
     Private Sub TimBtn_Click(sender As Object, e As EventArgs) Handles TimBtn.Click
@@ -97,8 +70,8 @@ Public Class SanPham
         PrintPreviewDialog1.ShowDialog()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-        Dim imagebmp As New Bitmap(Me.DataGridView1.Width, Me.DataGridView1.Height)
-        DataGridView1.DrawToBitmap(imagebmp, New Rectangle(0, 0, Me.DataGridView1.Width, Me.DataGridView1.Height))
+        Dim imagebmp As New Bitmap(Me.ViewSanPham.Width, Me.ViewSanPham.Height)
+        ViewSanPham.DrawToBitmap(imagebmp, New Rectangle(0, 0, Me.ViewSanPham.Width, Me.ViewSanPham.Height))
         e.Graphics.DrawImage(imagebmp, 100, 20)
     End Sub
 End Class

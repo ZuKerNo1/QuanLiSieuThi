@@ -23,16 +23,7 @@ Partial Class NhapHang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhapHang))
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.DsNhapHang1 = New QuanLiSieuThi.DsNhapHang()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaPNDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayNhapHangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenSPDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoLuongNhapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DonGiaNhapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Title = New System.Windows.Forms.Label()
         Me.TimBtn = New System.Windows.Forms.Button()
@@ -40,39 +31,15 @@ Partial Class NhapHang
         Me.InBtn = New System.Windows.Forms.Button()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        CType(Me.DsNhapHang1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'OleDbSelectCommand1
-        '
-        Me.OleDbSelectCommand1.CommandText = resources.GetString("OleDbSelectCommand1.CommandText")
-        Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
-        '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=LAPTOP-9TCJRCKI\KVU;Integrated Security=SSPI;In" &
-    "itial Catalog=QuanLySieuThi"
-        '
-        'OleDbDataAdapter1
-        '
-        Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
-        Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "ChiTietPhieuNhap", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("maPN", "maPN"), New System.Data.Common.DataColumnMapping("ngayNhapHang", "ngayNhapHang"), New System.Data.Common.DataColumnMapping("tenSP", "tenSP"), New System.Data.Common.DataColumnMapping("soLuongNhap", "soLuongNhap"), New System.Data.Common.DataColumnMapping("donGiaNhap", "donGiaNhap")})})
-        '
-        'DsNhapHang1
-        '
-        Me.DsNhapHang1.DataSetName = "DsNhapHang"
-        Me.DsNhapHang1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'DataGridView1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaPNDataGridViewTextBoxColumn, Me.NgayNhapHangDataGridViewTextBoxColumn, Me.TenSPDataGridViewTextBoxColumn, Me.SoLuongNhapDataGridViewTextBoxColumn, Me.DonGiaNhapDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataMember = "ChiTietPhieuNhap"
-        Me.DataGridView1.DataSource = Me.DsNhapHang1
         Me.DataGridView1.Location = New System.Drawing.Point(55, 256)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
@@ -80,46 +47,6 @@ Partial Class NhapHang
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(904, 370)
         Me.DataGridView1.TabIndex = 0
-        '
-        'MaPNDataGridViewTextBoxColumn
-        '
-        Me.MaPNDataGridViewTextBoxColumn.DataPropertyName = "maPN"
-        Me.MaPNDataGridViewTextBoxColumn.HeaderText = "maPN"
-        Me.MaPNDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.MaPNDataGridViewTextBoxColumn.Name = "MaPNDataGridViewTextBoxColumn"
-        Me.MaPNDataGridViewTextBoxColumn.Width = 125
-        '
-        'NgayNhapHangDataGridViewTextBoxColumn
-        '
-        Me.NgayNhapHangDataGridViewTextBoxColumn.DataPropertyName = "ngayNhapHang"
-        Me.NgayNhapHangDataGridViewTextBoxColumn.HeaderText = "ngayNhapHang"
-        Me.NgayNhapHangDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NgayNhapHangDataGridViewTextBoxColumn.Name = "NgayNhapHangDataGridViewTextBoxColumn"
-        Me.NgayNhapHangDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenSPDataGridViewTextBoxColumn
-        '
-        Me.TenSPDataGridViewTextBoxColumn.DataPropertyName = "tenSP"
-        Me.TenSPDataGridViewTextBoxColumn.HeaderText = "tenSP"
-        Me.TenSPDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenSPDataGridViewTextBoxColumn.Name = "TenSPDataGridViewTextBoxColumn"
-        Me.TenSPDataGridViewTextBoxColumn.Width = 125
-        '
-        'SoLuongNhapDataGridViewTextBoxColumn
-        '
-        Me.SoLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "soLuongNhap"
-        Me.SoLuongNhapDataGridViewTextBoxColumn.HeaderText = "soLuongNhap"
-        Me.SoLuongNhapDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SoLuongNhapDataGridViewTextBoxColumn.Name = "SoLuongNhapDataGridViewTextBoxColumn"
-        Me.SoLuongNhapDataGridViewTextBoxColumn.Width = 125
-        '
-        'DonGiaNhapDataGridViewTextBoxColumn
-        '
-        Me.DonGiaNhapDataGridViewTextBoxColumn.DataPropertyName = "donGiaNhap"
-        Me.DonGiaNhapDataGridViewTextBoxColumn.HeaderText = "donGiaNhap"
-        Me.DonGiaNhapDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DonGiaNhapDataGridViewTextBoxColumn.Name = "DonGiaNhapDataGridViewTextBoxColumn"
-        Me.DonGiaNhapDataGridViewTextBoxColumn.Width = 125
         '
         'Panel2
         '
@@ -136,7 +63,7 @@ Partial Class NhapHang
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Title.Location = New System.Drawing.Point(347, 33)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(357, 32)
+        Me.Title.Size = New System.Drawing.Size(358, 32)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH NHẬP HÀNG"
         '
@@ -205,7 +132,6 @@ Partial Class NhapHang
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "NhapHang"
         Me.Text = "Nhập Hàng"
-        CType(Me.DsNhapHang1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -213,17 +139,7 @@ Partial Class NhapHang
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
-    Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
-    Friend WithEvents DsNhapHang1 As DsNhapHang
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaPNDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NgayNhapHangDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenSPDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SoLuongNhapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DonGiaNhapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Title As Label
     Friend WithEvents TimBtn As Button

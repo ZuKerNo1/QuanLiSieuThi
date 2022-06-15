@@ -23,19 +23,7 @@ Partial Class KhachHang
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KhachHang))
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
-        Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.DsKhachHang1 = New QuanLiSieuThi.DsKhachHang()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaKHDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenKHDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DiaChiKHDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SDTDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ViewKhachHang = New System.Windows.Forms.DataGridView()
         Me.Title = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.InBtn = New System.Windows.Forms.Button()
@@ -58,110 +46,23 @@ Partial Class KhachHang
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        CType(Me.DsKhachHang1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ViewKhachHang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'OleDbSelectCommand1
+        'ViewKhachHang
         '
-        Me.OleDbSelectCommand1.CommandText = "SELECT dbo.KhachHang.*" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM     dbo.KhachHang"
-        Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
-        '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=LAPTOP-9TCJRCKI\KVU;Integrated Security=SSPI;In" &
-    "itial Catalog=QuanLySieuThi"
-        '
-        'OleDbInsertCommand1
-        '
-        Me.OleDbInsertCommand1.CommandText = "INSERT INTO ""QuanLySieuThi"".""dbo"".""KhachHang"" (""tenKH"", ""diaChiKH"", ""SDT"", ""Email" &
-    """) VALUES (?, ?, ?, ?)"
-        Me.OleDbInsertCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbInsertCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("tenKH", System.Data.OleDb.OleDbType.VarWChar, 0, "tenKH"), New System.Data.OleDb.OleDbParameter("diaChiKH", System.Data.OleDb.OleDbType.VarWChar, 0, "diaChiKH"), New System.Data.OleDb.OleDbParameter("SDT", System.Data.OleDb.OleDbType.VarWChar, 0, "SDT"), New System.Data.OleDb.OleDbParameter("Email", System.Data.OleDb.OleDbType.VarWChar, 0, "Email")})
-        '
-        'OleDbUpdateCommand1
-        '
-        Me.OleDbUpdateCommand1.CommandText = resources.GetString("OleDbUpdateCommand1.CommandText")
-        Me.OleDbUpdateCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbUpdateCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("tenKH", System.Data.OleDb.OleDbType.VarWChar, 0, "tenKH"), New System.Data.OleDb.OleDbParameter("diaChiKH", System.Data.OleDb.OleDbType.VarWChar, 0, "diaChiKH"), New System.Data.OleDb.OleDbParameter("SDT", System.Data.OleDb.OleDbType.VarWChar, 0, "SDT"), New System.Data.OleDb.OleDbParameter("Email", System.Data.OleDb.OleDbType.VarWChar, 0, "Email"), New System.Data.OleDb.OleDbParameter("Original_maKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenKH", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenKH", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_diaChiKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "diaChiKH", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_diaChiKH", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "diaChiKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_SDT", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_SDT", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_Email", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "Email", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_Email", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "Email", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDeleteCommand1
-        '
-        Me.OleDbDeleteCommand1.CommandText = resources.GetString("OleDbDeleteCommand1.CommandText")
-        Me.OleDbDeleteCommand1.Connection = Me.OleDbConnection1
-        Me.OleDbDeleteCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("Original_maKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "maKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_tenKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "tenKH", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_tenKH", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "tenKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_diaChiKH", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "diaChiKH", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_diaChiKH", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "diaChiKH", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_SDT", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_SDT", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "SDT", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("IsNull_Email", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "Email", System.Data.DataRowVersion.Original, True, Nothing), New System.Data.OleDb.OleDbParameter("Original_Email", System.Data.OleDb.OleDbType.VarWChar, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "Email", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'OleDbDataAdapter1
-        '
-        Me.OleDbDataAdapter1.DeleteCommand = Me.OleDbDeleteCommand1
-        Me.OleDbDataAdapter1.InsertCommand = Me.OleDbInsertCommand1
-        Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
-        Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "KhachHang", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("maKH", "maKH"), New System.Data.Common.DataColumnMapping("tenKH", "tenKH"), New System.Data.Common.DataColumnMapping("diaChiKH", "diaChiKH"), New System.Data.Common.DataColumnMapping("SDT", "SDT"), New System.Data.Common.DataColumnMapping("Email", "Email")})})
-        Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
-        '
-        'DsKhachHang1
-        '
-        Me.DsKhachHang1.DataSetName = "DsKhachHang"
-        Me.DsKhachHang1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaKHDataGridViewTextBoxColumn, Me.TenKHDataGridViewTextBoxColumn, Me.DiaChiKHDataGridViewTextBoxColumn, Me.SDTDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataMember = "KhachHang"
-        Me.DataGridView1.DataSource = Me.DsKhachHang1
-        Me.DataGridView1.Location = New System.Drawing.Point(79, 308)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(903, 282)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'MaKHDataGridViewTextBoxColumn
-        '
-        Me.MaKHDataGridViewTextBoxColumn.DataPropertyName = "maKH"
-        Me.MaKHDataGridViewTextBoxColumn.HeaderText = "maKH"
-        Me.MaKHDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.MaKHDataGridViewTextBoxColumn.Name = "MaKHDataGridViewTextBoxColumn"
-        Me.MaKHDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaKHDataGridViewTextBoxColumn.Width = 125
-        '
-        'TenKHDataGridViewTextBoxColumn
-        '
-        Me.TenKHDataGridViewTextBoxColumn.DataPropertyName = "tenKH"
-        Me.TenKHDataGridViewTextBoxColumn.HeaderText = "tenKH"
-        Me.TenKHDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TenKHDataGridViewTextBoxColumn.Name = "TenKHDataGridViewTextBoxColumn"
-        Me.TenKHDataGridViewTextBoxColumn.Width = 125
-        '
-        'DiaChiKHDataGridViewTextBoxColumn
-        '
-        Me.DiaChiKHDataGridViewTextBoxColumn.DataPropertyName = "diaChiKH"
-        Me.DiaChiKHDataGridViewTextBoxColumn.HeaderText = "diaChiKH"
-        Me.DiaChiKHDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DiaChiKHDataGridViewTextBoxColumn.Name = "DiaChiKHDataGridViewTextBoxColumn"
-        Me.DiaChiKHDataGridViewTextBoxColumn.Width = 125
-        '
-        'SDTDataGridViewTextBoxColumn
-        '
-        Me.SDTDataGridViewTextBoxColumn.DataPropertyName = "SDT"
-        Me.SDTDataGridViewTextBoxColumn.HeaderText = "SDT"
-        Me.SDTDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SDTDataGridViewTextBoxColumn.Name = "SDTDataGridViewTextBoxColumn"
-        Me.SDTDataGridViewTextBoxColumn.Width = 125
-        '
-        'EmailDataGridViewTextBoxColumn
-        '
-        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "Email"
-        Me.EmailDataGridViewTextBoxColumn.HeaderText = "Email"
-        Me.EmailDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
-        Me.EmailDataGridViewTextBoxColumn.Width = 125
+        Me.ViewKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.ViewKhachHang.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.ViewKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ViewKhachHang.Location = New System.Drawing.Point(79, 308)
+        Me.ViewKhachHang.Name = "ViewKhachHang"
+        Me.ViewKhachHang.RowHeadersWidth = 51
+        Me.ViewKhachHang.RowTemplate.Height = 24
+        Me.ViewKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.ViewKhachHang.Size = New System.Drawing.Size(903, 282)
+        Me.ViewKhachHang.TabIndex = 0
         '
         'Title
         '
@@ -170,7 +71,7 @@ Partial Class KhachHang
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Title.Location = New System.Drawing.Point(333, 31)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(386, 32)
+        Me.Title.Size = New System.Drawing.Size(387, 32)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH KHÁCH HÀNG"
         '
@@ -194,7 +95,7 @@ Partial Class KhachHang
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.maKHText)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.DataGridView1)
+        Me.Panel1.Controls.Add(Me.ViewKhachHang)
         Me.Panel1.Location = New System.Drawing.Point(0, 98)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1053, 599)
@@ -286,7 +187,6 @@ Partial Class KhachHang
         '
         'mailText
         '
-        Me.mailText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsKhachHang1, "KhachHang.Email", True))
         Me.mailText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mailText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.mailText.Location = New System.Drawing.Point(502, 121)
@@ -307,7 +207,6 @@ Partial Class KhachHang
         '
         'sdtText
         '
-        Me.sdtText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsKhachHang1, "KhachHang.SDT", True))
         Me.sdtText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sdtText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.sdtText.Location = New System.Drawing.Point(271, 122)
@@ -328,7 +227,6 @@ Partial Class KhachHang
         '
         'dChiText
         '
-        Me.dChiText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsKhachHang1, "KhachHang.diaChiKH", True))
         Me.dChiText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dChiText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.dChiText.Location = New System.Drawing.Point(271, 72)
@@ -349,7 +247,6 @@ Partial Class KhachHang
         '
         'nameText
         '
-        Me.nameText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsKhachHang1, "KhachHang.tenKH", True))
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.nameText.Location = New System.Drawing.Point(502, 19)
@@ -370,7 +267,6 @@ Partial Class KhachHang
         '
         'maKHText
         '
-        Me.maKHText.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DsKhachHang1, "KhachHang.maKH", True))
         Me.maKHText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maKHText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.maKHText.Location = New System.Drawing.Point(271, 19)
@@ -421,8 +317,7 @@ Partial Class KhachHang
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "KhachHang"
         Me.Text = "Form1"
-        CType(Me.DsKhachHang1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ViewKhachHang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -430,20 +325,7 @@ Partial Class KhachHang
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
-    Friend WithEvents OleDbInsertCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbUpdateCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDeleteCommand1 As OleDb.OleDbCommand
-    Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
-    Friend WithEvents DsKhachHang1 As DsKhachHang
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaKHDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenKHDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DiaChiKHDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SDTDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ViewKhachHang As DataGridView
     Friend WithEvents Title As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
