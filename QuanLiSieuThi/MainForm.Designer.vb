@@ -245,6 +245,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.switchPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel3.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)

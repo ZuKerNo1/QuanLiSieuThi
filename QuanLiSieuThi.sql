@@ -99,7 +99,16 @@ create table ChiTietPhieuNhap
 	primary key (maPN, maSP)
 )
 
+go
+create table TaiKhoan
+(
+	idTK int identity(1,1) not null primary key,
+	tenTK varchar(50) not null,
+	matKhau varchar(50) not null
+	
+)
 
+select * from TaiKhoan
 --
 go
 alter table ChiTietPhieuNhap
@@ -115,7 +124,18 @@ alter table SanPham
 	add constraint CK_SanPham_donGiaBan check (
 			donGiaBan >= 0)
 
+
+
 --
+
+go
+insert into TaiKhoan
+values  
+	('trung','1'),
+	('admin','1')
+
+
+
 go
 insert into KhachHang
 values  
@@ -225,6 +245,7 @@ FROM     dbo.ChiTietHoaDon INNER JOIN
 where dbo.HoaDon.maHD = '2'
 GROUP BY dbo.SanPham.tenSP, dbo.ChiTietHoaDon.soLuongDat, dbo.SanPham.donGiaBan, dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan
 */
+
 
 SELECT * 
 From SanPham 

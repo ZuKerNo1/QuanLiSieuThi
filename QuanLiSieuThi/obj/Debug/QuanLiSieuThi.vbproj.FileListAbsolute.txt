@@ -92,3 +92,4 @@ D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.DangKy.resources
