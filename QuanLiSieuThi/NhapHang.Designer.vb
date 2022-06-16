@@ -40,20 +40,22 @@ Partial Class NhapHang
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(55, 256)
+        Me.DataGridView1.Location = New System.Drawing.Point(41, 208)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(904, 370)
+        Me.DataGridView1.Size = New System.Drawing.Size(678, 301)
         Me.DataGridView1.TabIndex = 0
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.Title)
-        Me.Panel2.Location = New System.Drawing.Point(3, 3)
+        Me.Panel2.Location = New System.Drawing.Point(2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1045, 96)
+        Me.Panel2.Size = New System.Drawing.Size(784, 78)
         Me.Panel2.TabIndex = 8
         '
         'Title
@@ -61,9 +63,10 @@ Partial Class NhapHang
         Me.Title.AutoSize = True
         Me.Title.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Title.Location = New System.Drawing.Point(347, 33)
+        Me.Title.Location = New System.Drawing.Point(260, 27)
+        Me.Title.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(358, 32)
+        Me.Title.Size = New System.Drawing.Size(282, 25)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH NHẬP HÀNG"
         '
@@ -73,9 +76,10 @@ Partial Class NhapHang
         Me.TimBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.TimBtn.Image = CType(resources.GetObject("TimBtn.Image"), System.Drawing.Image)
-        Me.TimBtn.Location = New System.Drawing.Point(400, 146)
+        Me.TimBtn.Location = New System.Drawing.Point(300, 119)
+        Me.TimBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TimBtn.Name = "TimBtn"
-        Me.TimBtn.Size = New System.Drawing.Size(152, 46)
+        Me.TimBtn.Size = New System.Drawing.Size(114, 37)
         Me.TimBtn.TabIndex = 42
         Me.TimBtn.Text = "TÌM"
         Me.TimBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -84,9 +88,10 @@ Partial Class NhapHang
         'searchText
         '
         Me.searchText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.searchText.Location = New System.Drawing.Point(55, 157)
+        Me.searchText.Location = New System.Drawing.Point(41, 128)
+        Me.searchText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.searchText.Name = "searchText"
-        Me.searchText.Size = New System.Drawing.Size(314, 27)
+        Me.searchText.Size = New System.Drawing.Size(236, 23)
         Me.searchText.TabIndex = 41
         '
         'InBtn
@@ -94,12 +99,12 @@ Partial Class NhapHang
         Me.InBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.InBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.InBtn.Image = CType(resources.GetObject("InBtn.Image"), System.Drawing.Image)
-        Me.InBtn.Location = New System.Drawing.Point(807, 138)
+        Me.InBtn.Location = New System.Drawing.Point(605, 112)
+        Me.InBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.InBtn.Name = "InBtn"
-        Me.InBtn.Size = New System.Drawing.Size(152, 46)
+        Me.InBtn.Size = New System.Drawing.Size(114, 37)
         Me.InBtn.TabIndex = 46
-        Me.InBtn.Text = "IN"
+        Me.InBtn.Text = "BẢNG BIỂU"
         Me.InBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.InBtn.UseVisualStyleBackColor = False
         '
@@ -118,11 +123,11 @@ Partial Class NhapHang
         '
         'NhapHang
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(1052, 700)
+        Me.ClientSize = New System.Drawing.Size(789, 569)
         Me.Controls.Add(Me.InBtn)
         Me.Controls.Add(Me.TimBtn)
         Me.Controls.Add(Me.searchText)
@@ -130,6 +135,7 @@ Partial Class NhapHang
         Me.Controls.Add(Me.DataGridView1)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "NhapHang"
         Me.Text = "Nhập Hàng"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

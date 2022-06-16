@@ -26,10 +26,10 @@ Partial Class Login
         Me.Label7 = New System.Windows.Forms.Label()
         Me.passLB = New System.Windows.Forms.Label()
         Me.emailLB = New System.Windows.Forms.Label()
-        Me.matKhau = New System.Windows.Forms.TextBox()
-        Me.tenTK = New System.Windows.Forms.TextBox()
-        Me.btnDangNhap = New System.Windows.Forms.Button()
-        Me.btnDangKy = New System.Windows.Forms.Button()
+        Me.passText = New System.Windows.Forms.TextBox()
+        Me.emailText = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -74,55 +74,54 @@ Partial Class Login
         Me.emailLB.Location = New System.Drawing.Point(154, 169)
         Me.emailLB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.emailLB.Name = "emailLB"
-        Me.emailLB.Size = New System.Drawing.Size(94, 23)
+        Me.emailLB.Size = New System.Drawing.Size(58, 23)
         Me.emailLB.TabIndex = 7
-        Me.emailLB.Text = "Tài khoản"
+        Me.emailLB.Text = "Email"
         '
-        'matKhau
+        'passText
         '
-        Me.matKhau.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.matKhau.Location = New System.Drawing.Point(158, 288)
-        Me.matKhau.Margin = New System.Windows.Forms.Padding(4)
-        Me.matKhau.Name = "matKhau"
-        Me.matKhau.Size = New System.Drawing.Size(256, 30)
-        Me.matKhau.TabIndex = 6
-        Me.matKhau.UseSystemPasswordChar = True
+        Me.passText.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passText.Location = New System.Drawing.Point(158, 288)
+        Me.passText.Margin = New System.Windows.Forms.Padding(4)
+        Me.passText.Name = "passText"
+        Me.passText.Size = New System.Drawing.Size(256, 30)
+        Me.passText.TabIndex = 6
+        Me.passText.UseSystemPasswordChar = True
         '
-        'tenTK
+        'emailText
         '
-        Me.tenTK.BackColor = System.Drawing.SystemColors.Window
-        Me.tenTK.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tenTK.Location = New System.Drawing.Point(158, 200)
-        Me.tenTK.Margin = New System.Windows.Forms.Padding(4)
-        Me.tenTK.Name = "tenTK"
-        Me.tenTK.Size = New System.Drawing.Size(256, 30)
-        Me.tenTK.TabIndex = 5
+        Me.emailText.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailText.Location = New System.Drawing.Point(158, 200)
+        Me.emailText.Margin = New System.Windows.Forms.Padding(4)
+        Me.emailText.Name = "emailText"
+        Me.emailText.Size = New System.Drawing.Size(256, 30)
+        Me.emailText.TabIndex = 5
         '
-        'btnDangNhap
+        'Button1
         '
-        Me.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.btnDangNhap.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDangNhap.ForeColor = System.Drawing.SystemColors.Window
-        Me.btnDangNhap.Location = New System.Drawing.Point(81, 367)
-        Me.btnDangNhap.Name = "btnDangNhap"
-        Me.btnDangNhap.Size = New System.Drawing.Size(164, 56)
-        Me.btnDangNhap.TabIndex = 9
-        Me.btnDangNhap.Text = "Đăng nhập"
-        Me.btnDangNhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDangNhap.UseVisualStyleBackColor = False
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button1.Location = New System.Drawing.Point(81, 367)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(164, 56)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Đăng nhập"
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'btnDangKy
+        'Button2
         '
-        Me.btnDangKy.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.btnDangKy.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDangKy.ForeColor = System.Drawing.SystemColors.Window
-        Me.btnDangKy.Location = New System.Drawing.Point(291, 367)
-        Me.btnDangKy.Name = "btnDangKy"
-        Me.btnDangKy.Size = New System.Drawing.Size(164, 56)
-        Me.btnDangKy.TabIndex = 10
-        Me.btnDangKy.Text = "Đăng ký"
-        Me.btnDangKy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDangKy.UseVisualStyleBackColor = False
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button2.Location = New System.Drawing.Point(291, 367)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(164, 56)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Đăng ký"
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Login
         '
@@ -130,12 +129,12 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(568, 487)
-        Me.Controls.Add(Me.btnDangKy)
-        Me.Controls.Add(Me.btnDangNhap)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.passLB)
         Me.Controls.Add(Me.emailLB)
-        Me.Controls.Add(Me.matKhau)
-        Me.Controls.Add(Me.tenTK)
+        Me.Controls.Add(Me.passText)
+        Me.Controls.Add(Me.emailText)
         Me.Controls.Add(Me.Panel7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
@@ -152,8 +151,8 @@ Partial Class Login
     Friend WithEvents Label7 As Label
     Friend WithEvents passLB As Label
     Friend WithEvents emailLB As Label
-    Friend WithEvents matKhau As TextBox
-    Friend WithEvents tenTK As TextBox
-    Friend WithEvents btnDangNhap As Button
-    Friend WithEvents btnDangKy As Button
+    Friend WithEvents passText As TextBox
+    Friend WithEvents emailText As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

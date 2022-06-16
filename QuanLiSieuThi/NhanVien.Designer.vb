@@ -56,8 +56,9 @@ Partial Class NhanVien
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.Title)
         Me.Panel2.Location = New System.Drawing.Point(2, 1)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1049, 96)
+        Me.Panel2.Size = New System.Drawing.Size(787, 78)
         Me.Panel2.TabIndex = 7
         '
         'Title
@@ -65,9 +66,10 @@ Partial Class NhanVien
         Me.Title.AutoSize = True
         Me.Title.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Title.Location = New System.Drawing.Point(354, 33)
+        Me.Title.Location = New System.Drawing.Point(266, 27)
+        Me.Title.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(346, 32)
+        Me.Title.Size = New System.Drawing.Size(275, 25)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH NHÂN VIÊN"
         '
@@ -76,9 +78,10 @@ Partial Class NhanVien
         Me.XoaBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.XoaBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XoaBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.XoaBtn.Location = New System.Drawing.Point(720, 230)
+        Me.XoaBtn.Location = New System.Drawing.Point(540, 187)
+        Me.XoaBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.XoaBtn.Name = "XoaBtn"
-        Me.XoaBtn.Size = New System.Drawing.Size(152, 46)
+        Me.XoaBtn.Size = New System.Drawing.Size(114, 37)
         Me.XoaBtn.TabIndex = 28
         Me.XoaBtn.Text = "XÓA"
         Me.XoaBtn.UseVisualStyleBackColor = False
@@ -88,9 +91,10 @@ Partial Class NhanVien
         Me.LuuBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LuuBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LuuBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.LuuBtn.Location = New System.Drawing.Point(358, 230)
+        Me.LuuBtn.Location = New System.Drawing.Point(268, 187)
+        Me.LuuBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LuuBtn.Name = "LuuBtn"
-        Me.LuuBtn.Size = New System.Drawing.Size(152, 46)
+        Me.LuuBtn.Size = New System.Drawing.Size(114, 37)
         Me.LuuBtn.TabIndex = 27
         Me.LuuBtn.Text = "LƯU"
         Me.LuuBtn.UseVisualStyleBackColor = False
@@ -100,9 +104,10 @@ Partial Class NhanVien
         Me.SuaBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.SuaBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SuaBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.SuaBtn.Location = New System.Drawing.Point(538, 230)
+        Me.SuaBtn.Location = New System.Drawing.Point(404, 187)
+        Me.SuaBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SuaBtn.Name = "SuaBtn"
-        Me.SuaBtn.Size = New System.Drawing.Size(152, 46)
+        Me.SuaBtn.Size = New System.Drawing.Size(114, 37)
         Me.SuaBtn.TabIndex = 26
         Me.SuaBtn.Text = "SỬA"
         Me.SuaBtn.UseVisualStyleBackColor = False
@@ -112,9 +117,10 @@ Partial Class NhanVien
         Me.ThemBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ThemBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ThemBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.ThemBtn.Location = New System.Drawing.Point(179, 230)
+        Me.ThemBtn.Location = New System.Drawing.Point(134, 187)
+        Me.ThemBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ThemBtn.Name = "ThemBtn"
-        Me.ThemBtn.Size = New System.Drawing.Size(152, 46)
+        Me.ThemBtn.Size = New System.Drawing.Size(114, 37)
         Me.ThemBtn.TabIndex = 25
         Me.ThemBtn.Text = "THÊM"
         Me.ThemBtn.UseVisualStyleBackColor = False
@@ -123,9 +129,10 @@ Partial Class NhanVien
         '
         Me.mailText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mailText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.mailText.Location = New System.Drawing.Point(362, 167)
+        Me.mailText.Location = New System.Drawing.Point(272, 136)
+        Me.mailText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.mailText.Name = "mailText"
-        Me.mailText.Size = New System.Drawing.Size(270, 27)
+        Me.mailText.Size = New System.Drawing.Size(204, 23)
         Me.mailText.TabIndex = 24
         '
         'Label5
@@ -133,9 +140,10 @@ Partial Class NhanVien
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(271, 169)
+        Me.Label5.Location = New System.Drawing.Point(203, 137)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 19)
+        Me.Label5.Size = New System.Drawing.Size(48, 17)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "E-mail"
         '
@@ -143,9 +151,10 @@ Partial Class NhanVien
         '
         Me.sdtText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sdtText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.sdtText.Location = New System.Drawing.Point(130, 169)
+        Me.sdtText.Location = New System.Drawing.Point(98, 137)
+        Me.sdtText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.sdtText.Name = "sdtText"
-        Me.sdtText.Size = New System.Drawing.Size(122, 27)
+        Me.sdtText.Size = New System.Drawing.Size(92, 23)
         Me.sdtText.TabIndex = 22
         '
         'Label4
@@ -153,9 +162,10 @@ Partial Class NhanVien
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(39, 171)
+        Me.Label4.Location = New System.Drawing.Point(29, 139)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 19)
+        Me.Label4.Size = New System.Drawing.Size(34, 17)
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "SĐT"
         '
@@ -163,9 +173,10 @@ Partial Class NhanVien
         '
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.nameText.Location = New System.Drawing.Point(362, 120)
+        Me.nameText.Location = New System.Drawing.Point(272, 98)
+        Me.nameText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.nameText.Name = "nameText"
-        Me.nameText.Size = New System.Drawing.Size(270, 27)
+        Me.nameText.Size = New System.Drawing.Size(204, 23)
         Me.nameText.TabIndex = 18
         '
         'Label2
@@ -173,9 +184,10 @@ Partial Class NhanVien
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(271, 122)
+        Me.Label2.Location = New System.Drawing.Point(203, 99)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 19)
+        Me.Label2.Size = New System.Drawing.Size(48, 17)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Họ tên"
         '
@@ -183,9 +195,10 @@ Partial Class NhanVien
         '
         Me.maNVText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maNVText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.maNVText.Location = New System.Drawing.Point(130, 121)
+        Me.maNVText.Location = New System.Drawing.Point(98, 98)
+        Me.maNVText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.maNVText.Name = "maNVText"
-        Me.maNVText.Size = New System.Drawing.Size(122, 27)
+        Me.maNVText.Size = New System.Drawing.Size(92, 23)
         Me.maNVText.TabIndex = 16
         '
         'Label1
@@ -193,9 +206,10 @@ Partial Class NhanVien
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(39, 123)
+        Me.Label1.Location = New System.Drawing.Point(29, 100)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 19)
+        Me.Label1.Size = New System.Drawing.Size(50, 17)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Mã NV"
         '
@@ -204,9 +218,10 @@ Partial Class NhanVien
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(692, 122)
+        Me.Label8.Location = New System.Drawing.Point(519, 99)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 19)
+        Me.Label8.Size = New System.Drawing.Size(59, 17)
         Me.Label8.TabIndex = 33
         Me.Label8.Text = "Chức vụ"
         '
@@ -214,9 +229,10 @@ Partial Class NhanVien
         '
         Me.chucVuText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chucVuText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.chucVuText.Location = New System.Drawing.Point(783, 119)
+        Me.chucVuText.Location = New System.Drawing.Point(587, 97)
+        Me.chucVuText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chucVuText.Name = "chucVuText"
-        Me.chucVuText.Size = New System.Drawing.Size(199, 27)
+        Me.chucVuText.Size = New System.Drawing.Size(150, 23)
         Me.chucVuText.TabIndex = 34
         '
         'Label9
@@ -224,9 +240,10 @@ Partial Class NhanVien
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(692, 170)
+        Me.Label9.Location = New System.Drawing.Point(519, 138)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(57, 19)
+        Me.Label9.Size = New System.Drawing.Size(48, 17)
         Me.Label9.TabIndex = 35
         Me.Label9.Text = "Lương"
         '
@@ -234,9 +251,10 @@ Partial Class NhanVien
         '
         Me.luongText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.luongText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.luongText.Location = New System.Drawing.Point(783, 167)
+        Me.luongText.Location = New System.Drawing.Point(587, 136)
+        Me.luongText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.luongText.Name = "luongText"
-        Me.luongText.Size = New System.Drawing.Size(201, 27)
+        Me.luongText.Size = New System.Drawing.Size(152, 23)
         Me.luongText.TabIndex = 36
         '
         'ViewNhanVien
@@ -244,12 +262,13 @@ Partial Class NhanVien
         Me.ViewNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ViewNhanVien.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.ViewNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ViewNhanVien.Location = New System.Drawing.Point(12, 377)
+        Me.ViewNhanVien.Location = New System.Drawing.Point(9, 306)
+        Me.ViewNhanVien.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ViewNhanVien.Name = "ViewNhanVien"
         Me.ViewNhanVien.RowHeadersWidth = 51
         Me.ViewNhanVien.RowTemplate.Height = 24
         Me.ViewNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ViewNhanVien.Size = New System.Drawing.Size(1028, 311)
+        Me.ViewNhanVien.Size = New System.Drawing.Size(771, 253)
         Me.ViewNhanVien.TabIndex = 0
         '
         'TimBtn
@@ -258,9 +277,10 @@ Partial Class NhanVien
         Me.TimBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.TimBtn.Image = CType(resources.GetObject("TimBtn.Image"), System.Drawing.Image)
-        Me.TimBtn.Location = New System.Drawing.Point(357, 310)
+        Me.TimBtn.Location = New System.Drawing.Point(268, 252)
+        Me.TimBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TimBtn.Name = "TimBtn"
-        Me.TimBtn.Size = New System.Drawing.Size(152, 46)
+        Me.TimBtn.Size = New System.Drawing.Size(114, 37)
         Me.TimBtn.TabIndex = 40
         Me.TimBtn.Text = "TÌM"
         Me.TimBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -269,9 +289,10 @@ Partial Class NhanVien
         'searchText
         '
         Me.searchText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.searchText.Location = New System.Drawing.Point(12, 321)
+        Me.searchText.Location = New System.Drawing.Point(9, 261)
+        Me.searchText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.searchText.Name = "searchText"
-        Me.searchText.Size = New System.Drawing.Size(314, 27)
+        Me.searchText.Size = New System.Drawing.Size(236, 23)
         Me.searchText.TabIndex = 39
         '
         'InBtn
@@ -279,12 +300,12 @@ Partial Class NhanVien
         Me.InBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.InBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.InBtn.Image = CType(resources.GetObject("InBtn.Image"), System.Drawing.Image)
-        Me.InBtn.Location = New System.Drawing.Point(888, 310)
+        Me.InBtn.Location = New System.Drawing.Point(640, 252)
+        Me.InBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.InBtn.Name = "InBtn"
-        Me.InBtn.Size = New System.Drawing.Size(152, 46)
+        Me.InBtn.Size = New System.Drawing.Size(140, 37)
         Me.InBtn.TabIndex = 48
-        Me.InBtn.Text = "IN"
+        Me.InBtn.Text = "BẢNG BIỂU"
         Me.InBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.InBtn.UseVisualStyleBackColor = False
         '
@@ -303,10 +324,10 @@ Partial Class NhanVien
         '
         'NhanVien
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1052, 700)
+        Me.ClientSize = New System.Drawing.Size(789, 569)
         Me.Controls.Add(Me.InBtn)
         Me.Controls.Add(Me.TimBtn)
         Me.Controls.Add(Me.searchText)
@@ -329,6 +350,7 @@ Partial Class NhanVien
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.ViewNhanVien)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "NhanVien"
         Me.Text = "Form2"
         Me.Panel2.ResumeLayout(False)

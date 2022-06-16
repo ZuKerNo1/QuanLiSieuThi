@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class HoaDon
-    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
+    Dim con As SqlConnection = New SqlConnection("Data Source=ADMIN;Initial Catalog=QuanLySieuThi;Integrated Security=True")
 
     Private Sub Load_Data()
 
@@ -18,7 +18,7 @@ Public Class HoaDon
     Private Sub Xuat_HoaDon()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "SELECT dbo.HoaDon.maHD as N'Mã hóa đơn', dbo.HoaDon.ngayTaoHD as N'Ngày tạo HĐ', dbo.KhachHang.tenKH N'Tên khách hàng', dbo.NhanVien.tenNV as N'Tên nhân viên', format(sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan),'##,#\ VNĐ','es-ES') as N'Thành tiền'
+        lenh = "SELECT dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan) as N'Thành tiền'
 FROM     dbo.HoaDon INNER JOIN
 				dbo.ChiTietHoaDon ON dbo.HoaDon.maHD = dbo.ChiTietHoaDon.maHD INNER JOIN
 				dbo.SanPham ON dbo.SanPham.maSP = dbo.ChiTietHoaDon.maSP INNER JOIN
@@ -65,9 +65,7 @@ GROUP BY dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVie
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles InBtn.Click
-        PrintPreviewDialog1.Document = PrintDocument1
-        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
-        PrintPreviewDialog1.ShowDialog()
+        ReportHoaDon.Show()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim imagebmp As New Bitmap(Me.DataGridView1.Width, Me.DataGridView1.Height)

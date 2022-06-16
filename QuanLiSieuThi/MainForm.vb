@@ -13,9 +13,9 @@
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
     End Sub
     Private Function SelectThemeColor() As Color
-        Dim index As Integer = random.[Next](ThemesColor.ColorList.Count)
+        Dim index As Integer = Random.[Next](ThemesColor.ColorList.Count)
         While tempIndex = index
-            index = random.[Next](ThemesColor.ColorList.Count)
+            index = Random.[Next](ThemesColor.ColorList.Count)
         End While
         tempIndex = index
         Dim color As String = ThemesColor.ColorList(index)
@@ -54,8 +54,8 @@
         childForm.Show()
     End Sub
     Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
-        If (Not (activeForm) Is Nothing) Then
-            activeForm.Close()
+        If (Not (ActiveForm) Is Nothing) Then
+            ActiveForm.Close()
         End If
 
         Me.Hide()
@@ -82,7 +82,6 @@
         OpenChildForm(New HoaDon(), sender)
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        OpenChildForm(New MuaHang(), sender)
-    End Sub
+
+
 End Class

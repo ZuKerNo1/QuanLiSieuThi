@@ -51,12 +51,13 @@ Partial Class HoaDon
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(64, 392)
+        Me.DataGridView1.Location = New System.Drawing.Point(48, 318)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(907, 296)
+        Me.DataGridView1.Size = New System.Drawing.Size(680, 240)
         Me.DataGridView1.TabIndex = 0
         '
         'Panel2
@@ -64,8 +65,9 @@ Partial Class HoaDon
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.Title)
         Me.Panel2.Location = New System.Drawing.Point(1, 1)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1049, 96)
+        Me.Panel2.Size = New System.Drawing.Size(787, 78)
         Me.Panel2.TabIndex = 6
         '
         'Title
@@ -73,9 +75,10 @@ Partial Class HoaDon
         Me.Title.AutoSize = True
         Me.Title.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Title.Location = New System.Drawing.Point(366, 33)
+        Me.Title.Location = New System.Drawing.Point(274, 27)
+        Me.Title.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(320, 32)
+        Me.Title.Size = New System.Drawing.Size(252, 25)
         Me.Title.TabIndex = 3
         Me.Title.Text = "DANH SÁCH HÓA ĐƠN"
         '
@@ -83,9 +86,10 @@ Partial Class HoaDon
         '
         Me.soLuongText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.soLuongText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.soLuongText.Location = New System.Drawing.Point(593, 175)
+        Me.soLuongText.Location = New System.Drawing.Point(445, 142)
+        Me.soLuongText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.soLuongText.Name = "soLuongText"
-        Me.soLuongText.Size = New System.Drawing.Size(270, 27)
+        Me.soLuongText.Size = New System.Drawing.Size(204, 23)
         Me.soLuongText.TabIndex = 26
         '
         'Label5
@@ -93,9 +97,10 @@ Partial Class HoaDon
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(466, 178)
+        Me.Label5.Location = New System.Drawing.Point(350, 145)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 19)
+        Me.Label5.Size = New System.Drawing.Size(90, 17)
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "NV phụ trách"
         '
@@ -103,9 +108,10 @@ Partial Class HoaDon
         '
         Me.giaText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.giaText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.giaText.Location = New System.Drawing.Point(593, 117)
+        Me.giaText.Location = New System.Drawing.Point(445, 95)
+        Me.giaText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.giaText.Name = "giaText"
-        Me.giaText.Size = New System.Drawing.Size(270, 27)
+        Me.giaText.Size = New System.Drawing.Size(204, 23)
         Me.giaText.TabIndex = 24
         '
         'Label4
@@ -113,9 +119,10 @@ Partial Class HoaDon
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(466, 120)
+        Me.Label4.Location = New System.Drawing.Point(350, 98)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 19)
+        Me.Label4.Size = New System.Drawing.Size(54, 17)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Tên KH"
         '
@@ -123,9 +130,10 @@ Partial Class HoaDon
         '
         Me.nameText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.nameText.Location = New System.Drawing.Point(291, 175)
+        Me.nameText.Location = New System.Drawing.Point(218, 142)
+        Me.nameText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.nameText.Name = "nameText"
-        Me.nameText.Size = New System.Drawing.Size(122, 27)
+        Me.nameText.Size = New System.Drawing.Size(92, 23)
         Me.nameText.TabIndex = 22
         '
         'Label2
@@ -133,9 +141,10 @@ Partial Class HoaDon
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(160, 178)
+        Me.Label2.Location = New System.Drawing.Point(120, 145)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(102, 19)
+        Me.Label2.Size = New System.Drawing.Size(85, 17)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "Ngày tạo HĐ"
         '
@@ -143,9 +152,10 @@ Partial Class HoaDon
         '
         Me.maHDText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maHDText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.maHDText.Location = New System.Drawing.Point(291, 117)
+        Me.maHDText.Location = New System.Drawing.Point(218, 95)
+        Me.maHDText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.maHDText.Name = "maHDText"
-        Me.maHDText.Size = New System.Drawing.Size(122, 27)
+        Me.maHDText.Size = New System.Drawing.Size(92, 23)
         Me.maHDText.TabIndex = 20
         '
         'Label1
@@ -153,9 +163,10 @@ Partial Class HoaDon
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(200, 119)
+        Me.Label1.Location = New System.Drawing.Point(150, 97)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 19)
+        Me.Label1.Size = New System.Drawing.Size(51, 17)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Mã HĐ"
         '
@@ -163,9 +174,10 @@ Partial Class HoaDon
         '
         Me.tienText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tienText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.tienText.Location = New System.Drawing.Point(291, 227)
+        Me.tienText.Location = New System.Drawing.Point(218, 184)
+        Me.tienText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tienText.Name = "tienText"
-        Me.tienText.Size = New System.Drawing.Size(270, 27)
+        Me.tienText.Size = New System.Drawing.Size(204, 23)
         Me.tienText.TabIndex = 28
         '
         'Label3
@@ -173,9 +185,10 @@ Partial Class HoaDon
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(183, 230)
+        Me.Label3.Location = New System.Drawing.Point(137, 187)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 19)
+        Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Tổng tiền"
         '
@@ -185,9 +198,10 @@ Partial Class HoaDon
         Me.TimBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.TimBtn.Image = CType(resources.GetObject("TimBtn.Image"), System.Drawing.Image)
-        Me.TimBtn.Location = New System.Drawing.Point(409, 322)
+        Me.TimBtn.Location = New System.Drawing.Point(307, 262)
+        Me.TimBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TimBtn.Name = "TimBtn"
-        Me.TimBtn.Size = New System.Drawing.Size(152, 46)
+        Me.TimBtn.Size = New System.Drawing.Size(114, 37)
         Me.TimBtn.TabIndex = 44
         Me.TimBtn.Text = "TÌM"
         Me.TimBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -196,9 +210,10 @@ Partial Class HoaDon
         'searchText
         '
         Me.searchText.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.searchText.Location = New System.Drawing.Point(64, 333)
+        Me.searchText.Location = New System.Drawing.Point(48, 271)
+        Me.searchText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.searchText.Name = "searchText"
-        Me.searchText.Size = New System.Drawing.Size(314, 27)
+        Me.searchText.Size = New System.Drawing.Size(236, 23)
         Me.searchText.TabIndex = 43
         '
         'PrintPreviewDialog1
@@ -216,12 +231,12 @@ Partial Class HoaDon
         Me.InBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.InBtn.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.InBtn.Image = CType(resources.GetObject("InBtn.Image"), System.Drawing.Image)
-        Me.InBtn.Location = New System.Drawing.Point(819, 322)
+        Me.InBtn.Location = New System.Drawing.Point(614, 262)
+        Me.InBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.InBtn.Name = "InBtn"
-        Me.InBtn.Size = New System.Drawing.Size(152, 46)
+        Me.InBtn.Size = New System.Drawing.Size(114, 37)
         Me.InBtn.TabIndex = 45
-        Me.InBtn.Text = "IN"
+        Me.InBtn.Text = "BẢNG BIỂU"
         Me.InBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.InBtn.UseVisualStyleBackColor = False
         '
@@ -234,10 +249,10 @@ Partial Class HoaDon
         '
         'HoaDon
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1052, 700)
+        Me.ClientSize = New System.Drawing.Size(789, 569)
         Me.Controls.Add(Me.InBtn)
         Me.Controls.Add(Me.TimBtn)
         Me.Controls.Add(Me.searchText)
@@ -254,6 +269,7 @@ Partial Class HoaDon
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "HoaDon"
         Me.Text = "Hóa Đơn"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
