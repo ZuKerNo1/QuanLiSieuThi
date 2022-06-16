@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class NhanVien
-    Dim con As SqlConnection = New SqlConnection("Data Source=ADMIN;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
 
@@ -21,7 +21,8 @@ Public Class NhanVien
     Private Sub Xuat_dsNV()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "select * from NhanVien"
+        lenh = "SELECT maNV as N'Mã nhân viên', tenNV as N'Tên nhân viên', SDT as N'Số điện thoại', email as 'Email', chucVu as N'Chức vụ', format((luong),'##,#\ VNĐ','es-ES') as N'Lương'
+From NhanVien  "
         'Khai báo đối tượng Command dùng để thực hiện câu lệnh truy vấn
         Dim cmd As New SqlCommand(lenh, con)
         'Trước khi đọc cần mở kết nối ra
@@ -39,12 +40,12 @@ Public Class NhanVien
 
         dsNV = Me.BindingContext(dttable)
 
-        maNVText.Text = dsNV.Current("maNV")
-        nameText.Text = dsNV.Current("tenNV")
-        sdtText.Text = dsNV.Current("SDT")
-        mailText.Text = dsNV.Current("email")
-        chucVuText.Text = dsNV.Current("chucVu")
-        luongText.Text = dsNV.Current("luong")
+        maNVText.Text = dsNV.Current("Mã nhân viên")
+        nameText.Text = dsNV.Current("Tên nhân viên")
+        sdtText.Text = dsNV.Current("Số điện thoại")
+        mailText.Text = dsNV.Current("Email")
+        chucVuText.Text = dsNV.Current("Chức vụ")
+        luongText.Text = dsNV.Current("Lương")
 
 
     End Sub
@@ -143,7 +144,9 @@ Public Class NhanVien
     End Sub
 
     Private Sub InBtn_Click(sender As Object, e As EventArgs) Handles InBtn.Click
-        ReportNhanVien.Show()
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim imagebmp As New Bitmap(Me.ViewNhanVien.Width, Me.ViewNhanVien.Height)

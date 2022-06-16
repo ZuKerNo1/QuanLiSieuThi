@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class SanPham
-    Dim con As SqlConnection = New SqlConnection("Data Source=ADMIN;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
 
@@ -19,7 +19,8 @@ Public Class SanPham
     Private Sub Xuat_SanPham()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "select * from SanPham"
+        lenh = "SELECT maSP As N'Mã sản phẩm',tenSP As N'Tên sản phẩm', format((donGiaBan),'##,#\ VNĐ','es-ES') As N'Đơn giá', soLuongCon as N'Số lượng còn'
+From SanPham"
         'Khai báo đối tượng Command dùng để thực hiện câu lệnh truy vấn
         Dim cmd As New SqlCommand(lenh, con)
         'Trước khi đọc cần mở kết nối ra
@@ -37,10 +38,10 @@ Public Class SanPham
 
         dsSP = Me.BindingContext(dttable)
 
-        maSPText.Text = dsSP.Current("maSP")
-        nameText.Text = dsSP.Current("tenSP")
-        giaText.Text = dsSP.Current("donGiaBan")
-        soLuongText.Text = dsSP.Current("soLuongCon")
+        maSPText.Text = dsSP.Current("Mã sản phẩm")
+        nameText.Text = dsSP.Current("Tên sản phẩm")
+        giaText.Text = dsSP.Current("Đơn giá")
+        soLuongText.Text = dsSP.Current("Số lượng còn")
 
     End Sub
 
@@ -132,7 +133,9 @@ Public Class SanPham
         FilterData(searchText.Text)
     End Sub
     Private Sub InBtn_Click(sender As Object, e As EventArgs) Handles InBtn.Click
-        ReportSanPham.Show()
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim imagebmp As New Bitmap(Me.ViewSanPham.Width, Me.ViewSanPham.Height)

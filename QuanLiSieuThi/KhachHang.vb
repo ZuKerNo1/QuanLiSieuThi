@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 
 Public Class KhachHang
     Dim lenh As String
-    Dim con As SqlConnection = New SqlConnection("Data Source=ADMIN;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;Password=Trung@2305;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub Load_Data()
         maKHText.Enabled = False
@@ -146,7 +146,9 @@ Public Class KhachHang
     End Sub
 
     Private Sub InBtn_Click(sender As Object, e As EventArgs) Handles InBtn.Click
-        ReportKhachHang.Show()
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim imagebmp As New Bitmap(Me.ViewKhachHang.Width, Me.ViewKhachHang.Height)

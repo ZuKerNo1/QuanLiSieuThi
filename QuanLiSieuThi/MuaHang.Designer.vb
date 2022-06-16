@@ -284,10 +284,9 @@ Partial Class MuaHang
         Me.Controls.Add(Me.searchText)
         Me.Controls.Add(Me.ViewSanPham)
         Me.Controls.Add(Me.Panel2)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MuaHang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MuaHang"
+        Me.Text = "Trung_48_Nhom07"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.ViewSanPham, System.ComponentModel.ISupportInitialize).EndInit()

@@ -92,85 +92,74 @@ D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
 D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.AnalysisServices.AppLocal.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.AnalysisServices.AppLocal.Tabular.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.AnalysisServices.AppLocal.Core.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.SuggestedBindingRedirects.cache
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ReportKhachHang.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\SqlServerTypes\x64\msvcr120.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\SqlServerTypes\x86\msvcr120.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.ReportViewer.Design.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\Microsoft.SqlServer.Types.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\EnvDTE.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\stdole.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ReportNhanVien.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ReportHoaDon.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ReportNhapHang.resources
-C:\Users\AD\Desktop\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ReportSanPham.resources
+D:\GitHub\QuanLiSieuThi\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.DangKy.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.DangKy.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MuaHang.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+C:\Users\ACER\Downloads\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi-cfccb7e79253458fd079be20be0975a19e3ef7b1\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe.config
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.exe
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.pdb
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\bin\Debug\QuanLiSieuThi.xml
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\bin\Debug\Guna.UI2.dll
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.DangKy.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Load.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Login.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.MuaHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.exe
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.xml
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi\obj\Debug\QuanLiSieuThi.ThongTinTaiKhoan.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.vbproj.AssemblyReference.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.DangKy.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.HoaDon.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.KhachHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.Load.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.Login.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.MainForm.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.MuaHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.NhanVien.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.Resources.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.NhapHang.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.SanPham.resources
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.vbproj.GenerateResource.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.vbproj.CoreCompileInputs.cache
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.exe
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.xml
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.pdb
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\bin\Debug\QuanLiSieuThi.exe.config
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\bin\Debug\QuanLiSieuThi.exe
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\bin\Debug\QuanLiSieuThi.pdb
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\bin\Debug\QuanLiSieuThi.xml
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\bin\Debug\Guna.UI2.dll
+D:\UTE\Nam2-2\LapTrinhTrucQuan\BaoCaoCuoiKy\QuanLiSieuThi - Copy - Copy\obj\Debug\QuanLiSieuThi.vbproj.CopyComplete

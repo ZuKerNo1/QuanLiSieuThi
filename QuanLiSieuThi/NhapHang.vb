@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class NhapHang
-    Dim con As SqlConnection = New SqlConnection("Data Source=ADMIN;Initial Catalog=QuanLySieuThi;Integrated Security=True")
+    Dim con As SqlConnection = New SqlConnection("Data Source=DESKTOP-8GKPO1M;Persist Security Info=True;User ID=sa;Initial Catalog=QuanLySieuThi")
 
     Private Sub NhapHang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -26,7 +26,9 @@ group by dbo.PhieuNhap .maPN, dbo.PhieuNhap .ngayNhapHang, dbo.SanPham.tenSP, db
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles InBtn.Click
-        ReportNhapHang.Show()
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim imagebmp As New Bitmap(Me.DataGridView1.Width, Me.DataGridView1.Height)

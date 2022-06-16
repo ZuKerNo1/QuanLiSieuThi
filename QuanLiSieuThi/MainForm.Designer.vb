@@ -29,6 +29,7 @@ Partial Class MainForm
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.menuPanel = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -54,14 +55,14 @@ Partial Class MainForm
         Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1258, 91)
+        Me.Panel3.Size = New System.Drawing.Size(1492, 91)
         Me.Panel3.TabIndex = 5
         '
         'close
         '
         Me.close.BackColor = System.Drawing.Color.White
         Me.close.Image = CType(resources.GetObject("close.Image"), System.Drawing.Image)
-        Me.close.Location = New System.Drawing.Point(1205, 3)
+        Me.close.Location = New System.Drawing.Point(1419, 3)
         Me.close.Name = "close"
         Me.close.Size = New System.Drawing.Size(50, 50)
         Me.close.TabIndex = 3
@@ -73,9 +74,9 @@ Partial Class MainForm
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel7.Controls.Add(Me.Label7)
         Me.Panel7.Controls.Add(Me.Label6)
-        Me.Panel7.Location = New System.Drawing.Point(437, 15)
+        Me.Panel7.Location = New System.Drawing.Point(482, 12)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(391, 64)
+        Me.Panel7.Size = New System.Drawing.Size(528, 64)
         Me.Panel7.TabIndex = 2
         '
         'Label7
@@ -83,7 +84,7 @@ Partial Class MainForm
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label7.Location = New System.Drawing.Point(182, 14)
+        Me.Label7.Location = New System.Drawing.Point(264, 14)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(148, 35)
         Me.Label7.TabIndex = 2
@@ -94,7 +95,7 @@ Partial Class MainForm
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(42, 14)
+        Me.Label6.Location = New System.Drawing.Point(124, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(143, 35)
         Me.Label6.TabIndex = 1
@@ -103,6 +104,7 @@ Partial Class MainForm
         'menuPanel
         '
         Me.menuPanel.BackColor = System.Drawing.Color.White
+        Me.menuPanel.Controls.Add(Me.Button6)
         Me.menuPanel.Controls.Add(Me.Button5)
         Me.menuPanel.Controls.Add(Me.Button4)
         Me.menuPanel.Controls.Add(Me.Button3)
@@ -110,8 +112,22 @@ Partial Class MainForm
         Me.menuPanel.Controls.Add(Me.Button1)
         Me.menuPanel.Location = New System.Drawing.Point(3, 93)
         Me.menuPanel.Name = "menuPanel"
-        Me.menuPanel.Size = New System.Drawing.Size(207, 700)
+        Me.menuPanel.Size = New System.Drawing.Size(207, 880)
         Me.menuPanel.TabIndex = 3
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(2, 506)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(205, 120)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "MUA HÀNG"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
         '
@@ -119,9 +135,9 @@ Partial Class MainForm
         Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(0, 550)
+        Me.Button5.Location = New System.Drawing.Point(1, 380)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(205, 131)
+        Me.Button5.Size = New System.Drawing.Size(205, 120)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "NHẬP HÀNG"
         Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -133,9 +149,9 @@ Partial Class MainForm
         Me.Button4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(0, 413)
+        Me.Button4.Location = New System.Drawing.Point(0, 254)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(205, 131)
+        Me.Button4.Size = New System.Drawing.Size(205, 120)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "SẢN PHẨM"
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -147,9 +163,9 @@ Partial Class MainForm
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(1, 276)
+        Me.Button3.Location = New System.Drawing.Point(0, 632)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(205, 131)
+        Me.Button3.Size = New System.Drawing.Size(205, 120)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "KHÁCH HÀNG"
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -161,9 +177,9 @@ Partial Class MainForm
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(-1, 139)
+        Me.Button2.Location = New System.Drawing.Point(0, 128)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(205, 131)
+        Me.Button2.Size = New System.Drawing.Size(205, 120)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "NHÂN VIÊN"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -177,7 +193,7 @@ Partial Class MainForm
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.Location = New System.Drawing.Point(1, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(205, 131)
+        Me.Button1.Size = New System.Drawing.Size(205, 120)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "HÓA ĐƠN"
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -190,7 +206,7 @@ Partial Class MainForm
         Me.switchPanel.Controls.Add(Me.PictureBox1)
         Me.switchPanel.Location = New System.Drawing.Point(209, 93)
         Me.switchPanel.Name = "switchPanel"
-        Me.switchPanel.Size = New System.Drawing.Size(1052, 700)
+        Me.switchPanel.Size = New System.Drawing.Size(1283, 880)
         Me.switchPanel.TabIndex = 4
         '
         'Panel1
@@ -239,13 +255,14 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1261, 798)
+        Me.ClientSize = New System.Drawing.Size(1495, 880)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.menuPanel)
         Me.Controls.Add(Me.switchPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainForm"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Trung_48_Nhom07"
         Me.Panel3.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
@@ -275,4 +292,5 @@ Partial Class MainForm
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button6 As Button
 End Class
