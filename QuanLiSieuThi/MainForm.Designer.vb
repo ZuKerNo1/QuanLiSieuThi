@@ -149,7 +149,7 @@ Partial Class MainForm
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(1, 687)
+        Me.Button3.Location = New System.Drawing.Point(-1, 687)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(205, 131)
         Me.Button3.TabIndex = 2

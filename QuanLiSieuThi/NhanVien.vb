@@ -21,7 +21,8 @@ Public Class NhanVien
     Private Sub Xuat_dsNV()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "select * from NhanVien"
+        lenh = "SELECT maNV as N'Mã nhân viên', tenNV as N'Tên nhân viên', SDT as N'Số điện thoại', email as 'Email', chucVu as N'Chức vụ', format((luong),'##,#\ VNĐ','es-ES') as N'Lương'
+From NhanVien  "
         'Khai báo đối tượng Command dùng để thực hiện câu lệnh truy vấn
         Dim cmd As New SqlCommand(lenh, con)
         'Trước khi đọc cần mở kết nối ra
@@ -39,12 +40,12 @@ Public Class NhanVien
 
         dsNV = Me.BindingContext(dttable)
 
-        maNVText.Text = dsNV.Current("maNV")
-        nameText.Text = dsNV.Current("tenNV")
-        sdtText.Text = dsNV.Current("SDT")
-        mailText.Text = dsNV.Current("email")
-        chucVuText.Text = dsNV.Current("chucVu")
-        luongText.Text = dsNV.Current("luong")
+        maNVText.Text = dsNV.Current("Mã nhân viên")
+        nameText.Text = dsNV.Current("Tên nhân viên")
+        sdtText.Text = dsNV.Current("Số điện thoại")
+        mailText.Text = dsNV.Current("Email")
+        chucVuText.Text = dsNV.Current("Chức vụ")
+        luongText.Text = dsNV.Current("Lương")
 
 
     End Sub

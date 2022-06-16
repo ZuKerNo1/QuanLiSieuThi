@@ -18,7 +18,7 @@ Public Class HoaDon
     Private Sub Xuat_HoaDon()
         Dim lenh As String
         'Khai báo câu lệnh truy vấn dùng để đọc bảng SinhVien
-        lenh = "SELECT dbo.HoaDon.maHD, dbo.HoaDon.ngayTaoHD, dbo.KhachHang.tenKH, dbo.NhanVien.tenNV, sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan) as N'Thành tiền'
+        lenh = "SELECT dbo.HoaDon.maHD as N'Mã hóa đơn', dbo.HoaDon.ngayTaoHD as N'Ngày tạo HĐ', dbo.KhachHang.tenKH N'Tên khách hàng', dbo.NhanVien.tenNV as N'Tên nhân viên', format(sum(dbo.ChiTietHoaDon.soLuongDat * dbo.SanPham.donGiaBan),'##,#\ VNĐ','es-ES') as N'Thành tiền'
 FROM     dbo.HoaDon INNER JOIN
 				dbo.ChiTietHoaDon ON dbo.HoaDon.maHD = dbo.ChiTietHoaDon.maHD INNER JOIN
 				dbo.SanPham ON dbo.SanPham.maSP = dbo.ChiTietHoaDon.maSP INNER JOIN
